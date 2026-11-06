@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    color: #252B32;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #142B45;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* =========================================================================
+   DARK MODE THEME RULES - HIGH CONTRAST & CRYSTAL-CLEAR LEGIBILITY
+   ========================================================================= */
+html.dark {
+  background-color: #070F19 !important;
+  color: #E2E8F0 !important;
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #070F19 !important;
+  color: #E2E8F0 !important;
+}
+
+/* Background mappings for Dark Mode */
+html.dark .bg-white {
+  background-color: #0D1C2E !important;
+  color: #F8FAFC !important;
+}
+
+html.dark .bg-slate-50 {
+  background-color: #070F19 !important;
+}
+
+html.dark .bg-slate-100 {
+  background-color: #142B45 !important;
+  color: #E2E8F0 !important;
+}
+
+html.dark .bg-slate-200 {
+  background-color: #1E3E61 !important;
+  color: #E2E8F0 !important;
+}
+
+html.dark .bg-surface-light {
+  background-color: #0D1C2E !important;
+  color: #F8FAFC !important;
+}
+
+html.dark .bg-navy-50 {
+  background-color: #142B45 !important;
+  color: #94B4D5 !important;
+  border-color: #1E3E61 !important;
+}
+
+html.dark .bg-construction-50,
+html.dark .bg-construction-50\/40,
+html.dark .bg-construction-50\/50,
+html.dark .bg-construction-50\/20 {
+  background-color: rgba(242, 140, 40, 0.12) !important;
+  border-color: rgba(242, 140, 40, 0.3) !important;
+}
+
+html.dark .bg-construction-100,
+html.dark .bg-construction-100\/80 {
+  background-color: rgba(242, 140, 40, 0.2) !important;
+  border-color: rgba(242, 140, 40, 0.4) !important;
+}
+
+html.dark .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+/* Headings & Prominent Titles in Dark Mode (Pure Crisp Off-White) */
+html.dark h1, 
+html.dark h2, 
+html.dark h3, 
+html.dark h4, 
+html.dark h5, 
+html.dark h6,
+html.dark .text-navy-950,
+html.dark .text-navy-900,
+html.dark .text-navy-800,
+html.dark .text-navy-700,
+html.dark .text-charcoal-900,
+html.dark .text-charcoal-800,
+html.dark .text-slate-900,
+html.dark .text-slate-800 {
+  color: #F8FAFC !important;
+}
+
+/* Body Text, Paragraphs & Key Feature Descriptions (Bright Slate, 7:1+ Contrast) */
+html.dark p,
+html.dark li,
+html.dark .text-charcoal-700,
+html.dark .text-charcoal-600,
+html.dark .text-slate-700,
+html.dark .text-slate-600 {
+  color: #CBD5E1 !important;
+}
+
+/* Secondary Meta, Captions & Subtitles (Clean Slate-400, Crisp & Legible) */
+html.dark .text-charcoal-500,
+html.dark .text-charcoal-400,
+html.dark .text-slate-500,
+html.dark .text-slate-400 {
+  color: #94B4D5 !important;
+}
+
+/* Accent Text Luminous Clarity in Dark Mode */
+html.dark .text-construction-600,
+html.dark .text-construction-700,
+html.dark .text-construction-800 {
+  color: #FD943D !important;
+}
+
+/* Exception: High-Contrast Dark Text Preserved on Bright Orange Buttons/Cards/Badges */
+html.dark .bg-construction-500.text-navy-950,
+html.dark .bg-construction-500 .text-navy-950,
+html.dark .bg-construction-400.text-navy-950,
+html.dark .bg-construction-400 .text-navy-950,
+html.dark .bg-construction-500 h1,
+html.dark .bg-construction-500 h2,
+html.dark .bg-construction-500 h3,
+html.dark .bg-construction-500 h4,
+html.dark .bg-construction-500 h5,
+html.dark .bg-construction-500 p,
+html.dark .bg-construction-500 span,
+html.dark .bg-construction-500 li,
+html.dark .bg-construction-400 h1,
+html.dark .bg-construction-400 h2,
+html.dark .bg-construction-400 h3,
+html.dark .bg-construction-400 h4,
+html.dark .bg-construction-400 span {
+  color: #070F19 !important;
+}
+
+/* Exception: White Buttons inside Hero / Dark Navy sections keep crisp contrast */
+html.dark .bg-navy-950 button.bg-white,
+html.dark .bg-navy-900 button.bg-white,
+html.dark .bg-navy-950 a.bg-white,
+html.dark .bg-navy-900 a.bg-white {
+  background-color: #FFFFFF !important;
+  color: #070F19 !important;
+}
+html.dark .bg-navy-950 button.bg-white .text-navy-950,
+html.dark .bg-navy-900 button.bg-white .text-navy-950 {
+  color: #070F19 !important;
+}
+
+/* Border Contrast in Dark Mode */
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300 {
+  border-color: #1E3E61 !important;
+}
+
+html.dark .border-slate-400 {
+  border-color: #2A547E !important;
+}
+
+html.dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+html.dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]),
+html.dark .divide-slate-300 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1E3E61 !important;
+}
+
+/* Form Controls & Inputs in Dark Mode */
+html.dark label {
+  color: #E2E8F0 !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #142B45 !important;
+  border-color: #1E3E61 !important;
+  color: #F8FAFC !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: #F28C28 !important;
+  background-color: #1A3657 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(242, 140, 40, 0.3) !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #94B4D5 !important;
+  opacity: 0.9 !important;
+}
+
+html.dark select option {
+  background-color: #0D1C2E !important;
+  color: #F8FAFC !important;
+}
+
+/* Table Specific Contrast */
+html.dark table {
+  border-color: #1E3E61 !important;
+}
+html.dark table tbody tr {
+  border-color: #1E3E61 !important;
+}
+html.dark table tbody tr.bg-white {
+  background-color: #0D1C2E !important;
+}
+html.dark table tbody tr.bg-slate-50\/50 {
+  background-color: #070F19 !important;
+}
+html.dark table td,
+html.dark table th {
+  border-color: #1E3E61 !important;
+}
+html.dark table td {
+  color: #E2E8F0 !important;
+}
+html.dark table td span.text-slate-700 {
+  color: #CBD5E1 !important;
+}
+
+/* Elevated Shadows in Dark Mode */
+html.dark .shadow-sm,
+html.dark .shadow-md,
+html.dark .shadow-lg,
+html.dark .shadow-xl,
+html.dark .shadow-2xl {
+  box-shadow: 0 6px 24px -2px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* RTL (Right to Left) Bidirectional Rules */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+html[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+html[dir="rtl"] .text-right {
+  text-align: left !important;
+}
+
+/* Custom industrial scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F6F8;
+}
+::-webkit-scrollbar-thumb {
+  background: #142B45;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F28C28;
+}
+
+/* Subtle blueprint grid overlay for structural flair */
+.blueprint-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(20, 43, 69, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 43, 69, 0.05) 1px, transparent 1px);
+}
+
+.blueprint-grid-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Industrial stripe accent */
+.hazard-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    #F28C28,
+    #F28C28 10px,
+    #142B45 10px,
+    #142B45 20px
+  );
+}
