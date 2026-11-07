@@ -47,7 +47,7 @@ export default function PricingPage({ setCurrentPage, openQuoteModal }) {
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden text-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?auto=format&fit=crop&w=2000&q=80"
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
             alt="Architectural blueprints, precision scale ruler, drafting tools, and quantity surveying cost calculations"
             className="w-full h-full object-cover object-center"
           />

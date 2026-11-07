@@ -13,7 +13,7 @@ export const blogArticles = [
     },
     publishedDate: 'November 2, 2026',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523848309072-c199db53f137?auto=format&fit=crop&w=1200&q=80',
     excerpt: 'Explore the geotechnical mechanics behind large-diameter cast-in-situ bored piles, bentonite slurry stabilization, and hydrostatic pressure containment in coastal water tables.',
     content: [
       'Constructing multi-story commercial towers or industrial infrastructure adjacent to riverfronts or coastal zones demands advanced geotechnical interventions. Traditional shallow footings are rendered ineffective due to saturated silts, loose alluvial deposits, and elevated hydrostatic pressure.',
@@ -40,7 +40,7 @@ export const blogArticles = [
     },
     publishedDate: 'October 28, 2026',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=1200&q=80',
     excerpt: 'Discover how linking 3D structural geometries with 4D scheduling and 5D real-time cost quantification prevents trade collisions before the first excavator arrives on site.',
     content: [
       'Budget overruns in civil and commercial contracting historically stem from trade collisions discovered late during physical construction—such as MEP ducting conflicting with heavy structural steel cross-bracing.',
@@ -66,7 +66,7 @@ export const blogArticles = [
     },
     publishedDate: 'October 20, 2026',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=1200&q=80',
     excerpt: 'A comprehensive comparative analysis of modern PEB steel frames versus traditional reinforced concrete for logistics warehouses, manufacturing plants, and sports arenas.',
     content: [
       'When rapid commissioning and column-free clear spans are mandatory, Pre-Engineered Steel Buildings (PEB) offer monumental advantages over reinforced concrete (RCC). High-strength hot-rolled I-sections and cold-formed Z/C purlins allow clear spans exceeding 60 meters without intermediate columns.',
@@ -92,7 +92,7 @@ export const blogArticles = [
     },
     publishedDate: 'October 14, 2026',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=1200&q=80',
     excerpt: 'Maintaining an unblemished safety record across 480+ complex industrial and high-rise job sites requires strict behavioral culture, AI hazard monitoring, and daily toolbox drills.',
     content: [
       'Safety on heavy construction job sites is never accidental; it is engineered through relentless daily discipline. Every ApexBuild site operates under OSHA VPP Star guidelines, beginning each morning with mandatory 15-minute Job Hazard Analyses (JHA).',
@@ -144,7 +144,7 @@ export const blogArticles = [
     },
     publishedDate: 'September 30, 2026',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=1200&q=80',
     excerpt: 'Structural retrofitting methods, seismic reinforcement collars, and carbon-fiber wrapping that revitalize century-old masonry and timber structures for 21st-century occupants.',
     content: [
       'Adaptive reuse preserves urban heritage while expediting occupancy timelines by up to 35% compared to greenfield site development. However, balancing historic brickwork with modern seismic codes requires surgical engineering.',

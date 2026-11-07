@@ -91,7 +91,7 @@ export const servicesData = [
     title: 'Renovation & Remodeling',
     shortDesc: 'Comprehensive structural retrofitting, architectural rejuvenation, and adaptive reuse of aging facilities.',
     fullDesc: 'Transform existing structures into modern, energy-efficient, and compliant assets without the cost of full demolition. Our renovation team specializes in seismic retrofitting, structural strengthening via carbon fiber wraps (CFRP) and steel propping, commercial tenant fit-outs, and historic building preservation.',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80',
     icon: 'Hammer',
     category: 'Renovation',
     keyFeatures: [
@@ -120,7 +120,7 @@ export const servicesData = [
     title: 'Structural Construction',
     shortDesc: 'Core structural engineering, deep pile foundations, shear walls, and heavy reinforced concrete skeletons.',
     fullDesc: 'The structural skeleton is the backbone of any enduring construction. We execute the most demanding civil structural requirements: bored cast-in-situ piles, post-tensioned transfer slabs, retaining diaphragm walls, and heavy composite steel-concrete columns engineered to resist extreme wind, dead, and seismic loads.',
-    image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=1200&q=80',
     icon: 'ShieldCheck',
     category: 'Structural',
     keyFeatures: [
@@ -149,7 +149,7 @@ export const servicesData = [
     title: 'Civil Engineering Works',
     shortDesc: 'Large-scale infrastructure, asphalt & concrete roads, stormwater drainage networks, and earthworks.',
     fullDesc: 'Our civil works division handles massive municipal, industrial, and township infrastructure development. We possess our own fleet of heavy earthmoving equipment, motor graders, compactors, and asphalt pavers to deliver paved road networks, culverts, retaining walls, flood channels, and utility trenching with laser precision.',
-    image: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?auto=format&fit=crop&w=1200&q=80',
     icon: 'Wrench',
     category: 'Civil Works',
     keyFeatures: [

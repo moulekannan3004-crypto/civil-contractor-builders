@@ -12,11 +12,11 @@ export const projectsData = [
     contractValue: '$48.5 Million',
     structuralType: 'Reinforced Concrete Core & Post-Tensioned Transfer Slabs',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'A signature 24-story Grade-A commercial office tower featuring column-free high-efficiency floor plates, a 4-level subterranean diaphragm wall basement parking system, and an ultra-modern unitized glass curtain wall facade. Constructed using advanced climbing formwork and laser-precision post-tensioned cable systems.',
     scopeOfWork: [
@@ -54,7 +54,7 @@ export const projectsData = [
     featured: true,
     thumbnail: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -130,11 +130,11 @@ export const projectsData = [
     contractValue: '$14.2 Million',
     structuralType: 'Historic Load-Bearing Masonry Upgraded with CFRP & Internal Steel Frame',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Transforming a 90-year-old historic stone-and-brick banking building into an ultra-modern corporate financial headquarters while preserving the protected exterior facade. Involved hydraulic underpinning, structural column carbon fiber wrapping, and structural steel reinforcement insertion.',
     scopeOfWork: [
@@ -169,11 +169,11 @@ export const projectsData = [
     contractValue: '$76.0 Million',
     structuralType: 'Pre-Stressed Concrete (PSC) Box Girders on Cast-in-Situ Pier Columns',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1662378523353-3e8de8f19538?auto=format&fit=crop&w=1200&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1792745826463-2edec93fc918?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1769265114267-9b3c74e14a54?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1773894653260-fed7da65f31e?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'A vital urban infrastructure project easing severe traffic bottlenecks at a bustling metropolitan junction. The project comprised 112 cast-in-situ circular piers, deep pile caps, precast segment casting yard operations, and specialized launching gantry segment erection over active highway traffic.',
     scopeOfWork: [
@@ -208,11 +208,11 @@ export const projectsData = [
     contractValue: '$38.5 Million',
     structuralType: 'Monolithic RCC Shear Wall Frame with Aluminum System Formwork',
     featured: false,
-    thumbnail: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Twin 18-story residential towers accommodating 180 modern luxury apartments. Constructed utilizing Mivan aluminum formwork achieving an 8-day floor-to-floor cycle, high thermal insulation, and seamless flat concrete surfaces.',
     scopeOfWork: [
@@ -250,7 +250,7 @@ export const projectsData = [
     gallery: [
       'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'A high-precision pharmaceutical and sterile cleanroom facility built to cGMP and US-FDA compliant standards. Required specialized vibration-isolated foundations for precision microscopes, antimicrobial epoxy wall finishes, and air filtration HVAC plenums.',
     scopeOfWork: [
@@ -284,10 +284,10 @@ export const projectsData = [
     contractValue: '$21.7 Million',
     structuralType: 'Sulfate-Resistant Marine Concrete Frame with Coastal Anchoring',
     featured: false,
-    thumbnail: 'https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'A bustling waterfront commercial promenade with retail boutiques, oceanfront dining, and a reinforced coastal seawall promenade. Built using specialized marine-grade slag concrete and epoxy-coated corrosion-resistant steel rebar.',
@@ -323,7 +323,7 @@ export const projectsData = [
     featured: true,
     thumbnail: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&w=1200&q=80'
     ],

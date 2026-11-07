@@ -7,7 +7,7 @@ export default function NotFoundPage({ setCurrentPage }) {
       {/* Background Image with Dark Contrast Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=2000&q=80"
+          src="https://images.unsplash.com/photo-1781624594793-c9359f96a72a?auto=format&fit=crop&w=2000&q=80"
           alt="Active civil construction safety zone and caution boundary"
           className="w-full h-full object-cover object-center"
         />

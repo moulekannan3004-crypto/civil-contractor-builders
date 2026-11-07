@@ -175,7 +175,7 @@ export const leadershipTeam = [
     name: 'Marcus Bradley',
     role: 'Head of Pre-Construction & Estimating',
     bio: 'Expert quantity surveyor ensuring 100% transparent and reliable line-item costing, supply chain optimization, and value engineering.',
-    image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=80',
     credentials: 'B.S. Quantity Surveying | Member of RICS'
   }
 ];

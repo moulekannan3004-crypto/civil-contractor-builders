@@ -49,7 +49,7 @@ export default function BlogPage({ setCurrentPage, setSelectedArticleSlug }) {
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden text-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=2000&q=80"
+            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=2000&q=80"
             alt="Civil engineering materials research, structural testing laboratory and technical journal"
             className="w-full h-full object-cover object-center"
           />
