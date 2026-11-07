@@ -166,10 +166,10 @@ export default function ContactPage() {
           <img
             src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=2000&q=80"
             alt="Civil engineers and estimators discussing blueprints in project consultation office"
-            className="w-full h-full object-cover opacity-30 object-center"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/90" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/75" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

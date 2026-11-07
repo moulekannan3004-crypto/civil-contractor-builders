@@ -27,18 +27,16 @@ export default function HomePage({ setCurrentPage, openQuoteModal, setSelectedPr
           HERO SECTION
           ========================================================================= */}
       <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-navy-950 text-white overflow-hidden">
-        {/* Background Image with Dark Contrast Overlay */}
+        {/* Background Image with Crisp Contrast Scrim */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&w=2000&q=85"
             alt="Modern civil construction site and engineering scaffolding"
-            className="w-full h-full object-cover object-center scale-105 animate-pulse duration-10000"
+            className="w-full h-full object-cover object-center"
           />
-          {/* Subtle dark gradient overlay to guarantee text legibility */}
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/60" />
-          <div className="absolute inset-0 bg-navy-950/30" />
-          {/* Blueprint subtle grid overlay */}
-          <div className="absolute inset-0 blueprint-grid-dark opacity-30 pointer-events-none" />
+          {/* Balanced gradient overlay so cranes & sunset remain visible while text is legible */}
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/70" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
         </div>
 
         {/* Hero Content (Centered, Balanced & Symmetrical) */}

@@ -127,15 +127,15 @@ export default function Home2Page({ setCurrentPage, openQuoteModal, setSelectedP
           1. INDUSTRIAL HERO SECTION & LIVE RAPID ESTIMATOR
           ========================================================================= */}
       <section className="relative min-h-[90vh] flex items-center bg-navy-950 text-white overflow-hidden py-20 lg:py-24">
-        {/* Background Overlay with High-Impact Industrial Structural Steel Framing */}
+        {/* Background Overlay with Clearly Visible Industrial Structural Steel Superstructure */}
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=2000&q=80"
             alt="Industrial pre-engineered steel superstructure and clear-span warehouse framing"
-            className="w-full h-full object-cover object-center opacity-30 scale-105 transition-transform duration-1000"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/70" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/65 to-navy-950/45" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
