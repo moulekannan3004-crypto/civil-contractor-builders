@@ -43,8 +43,19 @@ export default function AuthPage({ setCurrentPage }) {
   };
 
   return (
-    <div className="w-full bg-slate-50 min-h-screen py-16 flex items-center justify-center">
-      <div className="max-w-md w-full mx-4">
+    <div className="relative min-h-screen w-full bg-navy-950 flex items-center justify-center py-16 px-4 overflow-hidden">
+      {/* Background Image with Dark Contrast Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=2000&q=80"
+          alt="Civil project superintendent managing digital inspection portal on site"
+          className="w-full h-full object-cover opacity-25 object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-navy-950/90" />
+        <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+      </div>
+
+      <div className="relative z-10 max-w-md w-full mx-4">
         
         {/* Brand Header */}
         <div className="text-center mb-8">
@@ -56,10 +67,10 @@ export default function AuthPage({ setCurrentPage }) {
               <Building className="w-5 h-5 stroke-[2.5]" />
             </div>
             <div className="text-left">
-              <span className="text-xl font-black font-heading text-navy-950 tracking-wider">
+              <span className="text-xl font-black font-heading text-white tracking-wider">
                 APEX<span className="text-construction-500">BUILD</span>
               </span>
-              <p className="text-[9px] tracking-widest uppercase font-bold text-slate-500">
+              <p className="text-[9px] tracking-widest uppercase font-bold text-slate-300">
                 Client & Trade Portal
               </p>
             </div>

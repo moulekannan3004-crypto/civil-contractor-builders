@@ -41,8 +41,8 @@ export default function ServicesPage({ setCurrentPage, openQuoteModal, onSelectS
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=2000&q=80"
-            alt="Commercial high-rise engineering"
-            className="w-full h-full object-cover opacity-25"
+            alt="Commercial high-rise civil construction and heavy engineering"
+            className="w-full h-full object-cover opacity-30 object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-navy-950/90" />
           <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />

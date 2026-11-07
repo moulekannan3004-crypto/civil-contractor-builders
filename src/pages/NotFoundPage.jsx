@@ -3,8 +3,19 @@ import { HardHat, ArrowLeft, Home, Building, Phone } from 'lucide-react';
 
 export default function NotFoundPage({ setCurrentPage }) {
   return (
-    <div className="w-full bg-slate-50 min-h-[80vh] flex items-center justify-center py-20 px-4 text-center">
-      <div className="max-w-lg bg-white rounded-2xl border border-slate-200 shadow-xl p-8 sm:p-12">
+    <div className="relative min-h-[85vh] w-full bg-navy-950 flex items-center justify-center py-20 px-4 text-center overflow-hidden">
+      {/* Background Image with Dark Contrast Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=2000&q=80"
+          alt="Active civil construction safety zone and caution boundary"
+          className="w-full h-full object-cover opacity-25 object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-navy-950/90" />
+        <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+      </div>
+
+      <div className="relative z-10 max-w-lg bg-white rounded-2xl border border-slate-200 shadow-2xl p-8 sm:p-12">
         <div className="w-20 h-20 rounded-2xl bg-construction-500/10 border-2 border-construction-500/30 flex items-center justify-center mx-auto mb-6 text-construction-600">
           <HardHat className="w-10 h-10 stroke-[2]" />
         </div>

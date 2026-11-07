@@ -50,21 +50,54 @@ export default function BlogDetailsPage({ setCurrentPage, articleSlug = 'deep-fo
   };
 
   return (
-    <div className="w-full bg-slate-50 min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Breadcrumb & Back Link */}
-        <div className="mb-6">
+    <div className="w-full bg-slate-50 min-h-screen">
+      {/* Article Header Hero Banner */}
+      <section className="relative py-16 lg:py-20 bg-navy-950 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=2000&q=80"
+            alt="Deep foundation engineering case study and geotechnical execution"
+            className="w-full h-full object-cover opacity-30 object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-navy-950/90" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
             onClick={() => setCurrentPage('blog')}
-            className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-construction-600 transition-colors uppercase tracking-wider"
+            className="inline-flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-construction-400 transition-colors uppercase tracking-wider mb-4 bg-navy-900/80 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-slate-700"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Engineering Journal</span>
           </button>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-construction-500/20 text-construction-400 text-xs font-bold uppercase tracking-wider mb-3 ml-3 border border-construction-500/30">
+            <Tag className="w-3.5 h-3.5" />
+            <span>{article.categoryLabel}</span>
+          </div>
+
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black font-heading tracking-tight text-white max-w-4xl">
+            {article.title}
+          </h1>
+
+          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-300 mt-4">
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-3.5 h-3.5 text-construction-400" />
+              <span>Published: {article.publishedDate}</span>
+            </span>
+            <span>•</span>
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-construction-400" />
+              <span>Read Time: {article.readTime}</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <div className="py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           
           {/* Main Article Body (8 Cols) */}
           <main className="lg:col-span-8 space-y-8">
@@ -322,6 +355,7 @@ export default function BlogDetailsPage({ setCurrentPage, articleSlug = 'deep-fo
 
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -45,7 +45,15 @@ export default function PricingPage({ setCurrentPage, openQuoteModal }) {
     <div className="w-full bg-slate-50 min-h-screen">
       {/* 1. PRICING HEADER HERO */}
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden text-center">
-        <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] opacity-40" />
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=2000&q=80"
+            alt="Civil engineering cost estimation blueprints, architectural scale, and calculation tools"
+            className="w-full h-full object-cover opacity-30 object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-navy-950/90" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+        </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-construction-500/20 text-construction-400 text-xs font-bold uppercase tracking-wider mb-4 border border-construction-500/30">

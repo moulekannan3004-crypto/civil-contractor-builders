@@ -47,11 +47,15 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
     <div className="w-full bg-slate-50 min-h-screen">
       {/* 1. SERVICE HEADER HERO */}
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-luminosity"
-          style={{ backgroundImage: `url('${service.image}')` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-transparent" />
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=2000&q=80"
+            alt="Technical civil engineering execution blueprints and site specifications"
+            className="w-full h-full object-cover opacity-30 object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/60" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="max-w-3xl">

@@ -127,15 +127,16 @@ export default function Home2Page({ setCurrentPage, openQuoteModal, setSelectedP
           1. INDUSTRIAL HERO SECTION & LIVE RAPID ESTIMATOR
           ========================================================================= */}
       <section className="relative min-h-[90vh] flex items-center bg-navy-950 text-white overflow-hidden py-20 lg:py-24">
-        {/* Background Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-luminosity scale-105 transition-transform duration-1000"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1920&q=80')` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-950/70" />
-        
-        {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+        {/* Background Overlay with High-Impact Industrial Structural Steel Framing */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=2000&q=80"
+            alt="Industrial pre-engineered steel superstructure and clear-span warehouse framing"
+            className="w-full h-full object-cover object-center opacity-30 scale-105 transition-transform duration-1000"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/70" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-20 pointer-events-none" />
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
