@@ -47,12 +47,12 @@ export default function PricingPage({ setCurrentPage, openQuoteModal }) {
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden text-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=2000&q=80"
-            alt="Civil engineering cost estimation blueprints, architectural scale, and calculation tools"
+            src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?auto=format&fit=crop&w=2000&q=80"
+            alt="Architectural blueprints, precision scale ruler, drafting tools, and quantity surveying cost calculations"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/75" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">

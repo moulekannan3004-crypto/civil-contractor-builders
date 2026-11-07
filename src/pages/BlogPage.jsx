@@ -53,8 +53,8 @@ export default function BlogPage({ setCurrentPage, setSelectedArticleSlug }) {
             alt="Civil engineering materials research, structural testing laboratory and technical journal"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/75" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
         
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">

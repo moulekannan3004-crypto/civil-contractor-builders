@@ -28,11 +28,11 @@ export default function AboutPage({ setCurrentPage, openQuoteModal }) {
       {/* Page Header Banner */}
       <section className="relative py-20 bg-navy-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1535732820275-9ffd998cac22?auto=format&fit=crop&w=2000&q=80" alt="Civil engineering blueprints and construction site" onError={(e) => { e.currentTarget.src = 'assets/about-civil-engineers.jpg'; }}
+          <img src="https://images.unsplash.com/photo-1535732820275-9ffd998cac22?auto=format&fit=crop&w=2000&q=80" alt="Civil engineering leadership and project directors reviewing structural site blueprints" onError={(e) => { e.currentTarget.src = 'assets/about-civil-engineers.jpg'; }}
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/75" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

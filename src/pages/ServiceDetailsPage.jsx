@@ -49,12 +49,12 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=2000&q=80"
-            alt="Technical civil engineering execution blueprints and site specifications"
+            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2000&q=80"
+            alt="Heavy construction crane lifting massive structural steel beams and rebar framework"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/65 to-navy-950/50" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/60 to-navy-950/45" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">

@@ -30,13 +30,13 @@ export default function HomePage({ setCurrentPage, openQuoteModal, setSelectedPr
         {/* Background Image with Crisp Contrast Scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&w=2000&q=85"
-            alt="Modern civil construction site and engineering scaffolding"
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=85"
+            alt="Active civil contracting site with heavy tower cranes and structural concrete foundation"
             className="w-full h-full object-cover object-center"
           />
-          {/* Balanced gradient overlay so cranes & sunset remain visible while text is legible */}
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/70" />
-          <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
+          {/* Balanced gradient overlay ensuring the construction site is vividly visible while text is 100% legible */}
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+          <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
 
         {/* Hero Content (Centered, Balanced & Symmetrical) */}

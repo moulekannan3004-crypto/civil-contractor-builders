@@ -51,8 +51,8 @@ export default function AuthPage({ setCurrentPage }) {
           alt="Civil project superintendent managing digital inspection portal on site"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/75" />
-        <div className="absolute inset-0 blueprint-grid-dark opacity-15 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+        <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
       </div>
 
       <div className="relative z-10 max-w-md w-full mx-4">
