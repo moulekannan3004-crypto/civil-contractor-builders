@@ -213,8 +213,9 @@ export const projectsData = [
     contractValue: '$38.5 Million',
     structuralType: 'Monolithic RCC Shear Wall Frame with Aluminum System Formwork',
     featured: false,
-    thumbnail: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/crestview-heights-urban-residences.jpg',
     gallery: [
+      './assets/crestview-heights-urban-residences.jpg',
       'https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80'
