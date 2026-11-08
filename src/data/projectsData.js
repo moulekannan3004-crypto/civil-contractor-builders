@@ -53,8 +53,9 @@ export const projectsData = [
     contractValue: '$32.0 Million',
     structuralType: 'Pre-Engineered Heavy Structural Steel with Standing Seam Galvalume Roofing',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/mega-logistics-distribution-center.jpg',
     gallery: [
+      './assets/mega-logistics-distribution-center.jpg',
       'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=80'
