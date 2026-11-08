@@ -178,6 +178,7 @@ export default function App() {
             setCurrentPage={handlePageChange}
             openQuoteModal={handleOpenQuoteModal}
             selectedServiceId={selectedServiceId}
+            setSelectedServiceId={setSelectedServiceId}
           />
         )}
 

@@ -19,7 +19,7 @@ import {
 import { servicesData } from '../data/servicesData';
 import { pricingPackages } from '../data/pricingData';
 
-export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, selectedServiceId = 'commercial-construction' }) {
+export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, selectedServiceId = 'commercial-construction', setSelectedServiceId }) {
   const service = servicesData.find(s => s.id === selectedServiceId) || servicesData[1]; // default to commercial
   const [activeTab, setActiveTab] = useState('specs');
   const [openFaq, setOpenFaq] = useState(0);
@@ -362,11 +362,11 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
 
             </div>
 
-            {/* Right 4 Columns: Sticky Quick Proposal Box & Contact */}
-            <div className="lg:col-span-4 space-y-6">
+            {/* Right 4 Columns: Quick Proposal Box & Contact */}
+            <aside className="lg:col-span-4 space-y-6">
               
-              {/* Sticky Quote Card */}
-              <div className="bg-navy-900 text-white p-6 sm:p-8 rounded-xl border border-navy-800 shadow-xl sticky top-24">
+              {/* Quote Card */}
+              <div className="bg-navy-900 text-white p-6 sm:p-8 rounded-xl border border-navy-800 shadow-xl">
                 <span className="text-[10px] font-black uppercase tracking-widest text-construction-400 bg-construction-500/10 px-3 py-1 rounded inline-block mb-3">
                   Direct Estimating Desk
                 </span>
@@ -417,6 +417,7 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
                     <button
                       key={s.id}
                       onClick={() => {
+                        if (setSelectedServiceId) setSelectedServiceId(s.id);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                       className="w-full text-left text-xs font-semibold text-slate-700 hover:text-construction-600 p-2 rounded hover:bg-slate-50 transition-colors flex items-center justify-between"
@@ -428,7 +429,7 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
                 </div>
               </div>
 
-            </div>
+            </aside>
 
           </div>
         </div>
