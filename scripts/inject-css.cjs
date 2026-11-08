@@ -26,7 +26,7 @@ if (fs.existsSync(mainCssPath)) {
 }
 
 // Copy favicon and images to dist
-['favicon.svg', 'about-civil-engineers.jpg', 'home-hero-construction.jpg'].forEach(file => {
+['favicon.svg', 'about-civil-engineers.jpg', 'home-hero-construction.jpg', 'home2-hero-industrial.jpg'].forEach(file => {
   const src = path.join(assetsDir, file);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(distAssetsDir, file));
