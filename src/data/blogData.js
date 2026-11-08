@@ -40,7 +40,7 @@ export const blogArticles = [
     },
     publishedDate: 'October 28, 2026',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/bim-5d-modeling.jpg',
     excerpt: 'Discover how linking 3D structural geometries with 4D scheduling and 5D real-time cost quantification prevents trade collisions before the first excavator arrives on site.',
     content: [
       'Budget overruns in civil and commercial contracting historically stem from trade collisions discovered late during physical construction—such as MEP ducting conflicting with heavy structural steel cross-bracing.',

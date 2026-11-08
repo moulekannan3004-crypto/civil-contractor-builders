@@ -55,11 +55,17 @@ export default function BlogDetailsPage({ setCurrentPage, articleSlug = 'deep-fo
       <section className="relative py-16 lg:py-20 bg-navy-950 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=2000&q=80"
-            alt="Deep foundation engineering case study and geotechnical execution"
+            src={article.image}
+            onError={(e) => {
+              if (!e.currentTarget.dataset.retried) {
+                e.currentTarget.dataset.retried = '1';
+                e.currentTarget.src = 'assets/about-civil-engineers.jpg';
+              }
+            }}
+            alt={article.title}
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-navy-950/80" />
           <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
 
@@ -158,6 +164,12 @@ export default function BlogDetailsPage({ setCurrentPage, articleSlug = 'deep-fo
               <div className="rounded-xl overflow-hidden mb-8 border border-slate-200 shadow-sm">
                 <img
                   src={article.image}
+                  onError={(e) => {
+                    if (!e.currentTarget.dataset.retried) {
+                      e.currentTarget.dataset.retried = '1';
+                      e.currentTarget.src = 'assets/about-civil-engineers.jpg';
+                    }
+                  }}
                   alt={article.title}
                   className="w-full max-h-[420px] object-cover"
                 />
@@ -318,6 +330,12 @@ export default function BlogDetailsPage({ setCurrentPage, articleSlug = 'deep-fo
                   >
                     <img
                       src={rec.image}
+                      onError={(e) => {
+                        if (!e.currentTarget.dataset.retried) {
+                          e.currentTarget.dataset.retried = '1';
+                          e.currentTarget.src = 'assets/about-civil-engineers.jpg';
+                        }
+                      }}
                       alt={rec.title}
                       className="w-14 h-14 rounded object-cover flex-shrink-0"
                     />

@@ -142,7 +142,12 @@ export default function BlogPage({ setCurrentPage, setSelectedArticleSlug }) {
                       <img
                         src={article.image}
                         alt={article.title}
-                        onError={(e) => { e.currentTarget.src = 'assets/about-civil-engineers.jpg'; }}
+                        onError={(e) => {
+                          if (!e.currentTarget.dataset.retried) {
+                            e.currentTarget.dataset.retried = '1';
+                            e.currentTarget.src = 'assets/about-civil-engineers.jpg';
+                          }
+                        }}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <span className="absolute top-3 left-3 bg-navy-950/80 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1 rounded">
