@@ -118,7 +118,7 @@ export const blogArticles = [
     },
     publishedDate: 'October 8, 2026',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/green-concrete-foundations.jpg',
     excerpt: 'How supplementary cementitious materials (GGBS & fly ash) and CO2-injected mineralized concrete achieve higher compressive strength while cutting embodied carbon by 45%.',
     content: [
       'Concrete is the second most consumed resource on Earth after water. To meet LEED Platinum standards, ApexBuild incorporates Ground Granulated Blast-furnace Slag (GGBS) and silica fume replacements that drastically reduce clinker reliance.',
