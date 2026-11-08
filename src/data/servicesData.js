@@ -33,7 +33,7 @@ export const servicesData = [
     title: 'Commercial Building Construction',
     shortDesc: 'State-of-the-art corporate headquarters, tech campuses, retail complexes, and commercial office towers.',
     fullDesc: 'Our commercial construction division delivers landmark corporate facilities designed for scalability, operational efficiency, and commanding presence. We utilize advanced Building Information Modeling (BIM) and value engineering to optimize floor plates, integrate complex HVAC and BMS systems, and accelerate construction timelines while minimizing disruptions to surrounding commercial districts.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/commercial-building-construction.jpg',
     icon: 'Building2',
     category: 'Commercial',
     keyFeatures: [
