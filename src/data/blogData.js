@@ -92,7 +92,7 @@ export const blogArticles = [
     },
     publishedDate: 'October 14, 2026',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/safety-toolbox-briefing.jpg',
     excerpt: 'Maintaining an unblemished safety record across 480+ complex industrial and high-rise job sites requires strict behavioral culture, AI hazard monitoring, and daily toolbox drills.',
     content: [
       'Safety on heavy construction job sites is never accidental; it is engineered through relentless daily discipline. Every ApexBuild site operates under OSHA VPP Star guidelines, beginning each morning with mandatory 15-minute Job Hazard Analyses (JHA).',
