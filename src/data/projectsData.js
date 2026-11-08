@@ -252,8 +252,9 @@ export const projectsData = [
     contractValue: '$29.4 Million',
     structuralType: 'Specialized Concrete & Steel Hybrid with Heavy Anti-Vibration Isolation Slabs',
     featured: false,
-    thumbnail: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/apex-bioscience-cleanroom-facility.jpg',
     gallery: [
+      './assets/apex-bioscience-cleanroom-facility.jpg',
       'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80'
