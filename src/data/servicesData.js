@@ -62,7 +62,7 @@ export const servicesData = [
     title: 'Industrial Construction',
     shortDesc: 'Heavy-duty manufacturing plants, logistics distribution warehouses, cold storage facilities, and workshops.',
     fullDesc: 'We engineer industrial facilities built to withstand rigorous heavy operations, heavy machinery vibrational loads, and 24/7 logistical traffic. From pre-engineered steel buildings (PEB) to specialized chemical storage units, we implement heavy-duty superflat flooring, industrial drainage, overhead crane gantries, and high-clearance bays.',
-    image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/industrial-construction-site.jpg',
     icon: 'Factory',
     category: 'Industrial',
     keyFeatures: [

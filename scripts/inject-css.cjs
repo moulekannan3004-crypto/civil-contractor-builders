@@ -26,7 +26,7 @@ if (fs.existsSync(mainCssPath)) {
 }
 
 // Copy favicon and images to dist
-['favicon.svg', 'about-civil-engineers.jpg', 'home-hero-construction.jpg', 'home2-hero-industrial.jpg', 'bim-5d-modeling.jpg', 'safety-toolbox-briefing.jpg', 'green-concrete-foundations.jpg', 'deep-foundation-engineering.jpg', 'residential-building-construction.jpg', 'commercial-building-construction.jpg'].forEach(file => {
+['favicon.svg', 'about-civil-engineers.jpg', 'home-hero-construction.jpg', 'home2-hero-industrial.jpg', 'bim-5d-modeling.jpg', 'safety-toolbox-briefing.jpg', 'green-concrete-foundations.jpg', 'deep-foundation-engineering.jpg', 'residential-building-construction.jpg', 'commercial-building-construction.jpg', 'industrial-construction-site.jpg'].forEach(file => {
   const src = path.join(assetsDir, file);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(distAssetsDir, file));
