@@ -329,8 +329,9 @@ export const projectsData = [
     contractValue: '$54.2 Million',
     structuralType: 'Composite Steel Space Truss with Cast-in-Situ Post-Tensioned Concrete',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/metro-civic-convention-center.jpg',
     gallery: [
+      './assets/metro-civic-convention-center.jpg',
       'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&w=1200&q=80'
