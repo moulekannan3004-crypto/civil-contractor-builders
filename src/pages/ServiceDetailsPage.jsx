@@ -49,8 +49,14 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=2000&q=80"
-            alt="Heavy construction crane lifting massive structural steel beams and rebar framework"
+            src={service.image}
+            onError={(e) => {
+              if (!e.currentTarget.dataset.retried) {
+                e.currentTarget.dataset.retried = '1';
+                e.currentTarget.src = 'assets/about-civil-engineers.jpg';
+              }
+            }}
+            alt={service.title}
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/60 to-navy-950/45" />

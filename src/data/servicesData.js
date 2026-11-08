@@ -4,7 +4,7 @@ export const servicesData = [
     title: 'Residential Building Construction',
     shortDesc: 'Turnkey residential contracting from bespoke luxury private villas to modern multi-family housing complexes.',
     fullDesc: 'We provide end-to-end residential construction services engineered to the highest architectural standards. Our team manages every milestone—from soil testing and deep foundation engineering to framing, MEP installation, and premium turnkey finishes. Whether building custom private estates, gated residential communities, or high-rise residential towers, we ensure structural resilience, energy efficiency, and uncompromising craftsmanship.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/residential-building-construction.jpg',
     icon: 'Home',
     category: 'Residential',
     keyFeatures: [
