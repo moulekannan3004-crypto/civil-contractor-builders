@@ -93,8 +93,9 @@ export const projectsData = [
     contractValue: '$27.8 Million',
     structuralType: 'Earthquake-Resistant Monolithic Concrete & Architectural Stone Masonry',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/grand-serenity-luxury-residences.jpg',
     gallery: [
+      './assets/grand-serenity-luxury-residences.jpg',
       'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80'
