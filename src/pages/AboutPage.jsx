@@ -279,31 +279,26 @@ export default function AboutPage({ setCurrentPage, openQuoteModal }) {
             subtitle="Over a quarter century of growth from localized foundation earthworks to multi-million dollar structural landmarks."
           />
 
-          <div className="relative border-l-2 border-construction-500/40 ml-4 md:ml-32 space-y-12">
+          <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
             {companyMilestones.map((milestone, idx) => (
-              <div key={idx} className="relative pl-8 sm:pl-10 group">
-                {/* Timeline Pin Node */}
-                <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-navy-900 border-4 border-white flex items-center justify-center shadow group-hover:bg-construction-500 transition-colors">
-                  <div className="w-2.5 h-2.5 rounded-full bg-white"></div>
+              <div 
+                key={idx} 
+                className="bg-surface-light p-6 rounded-xl border border-slate-200 hover:border-construction-400 transition-all shadow-sm"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <span className="text-base font-black font-heading text-construction-600 font-mono">
+                    {milestone.year}
+                  </span>
+                  <span className="text-xs uppercase tracking-wider font-semibold text-charcoal-500">
+                    Phase {idx + 1}
+                  </span>
                 </div>
-
-                {/* Content Box */}
-                <div className="bg-surface-light p-6 rounded-xl border border-slate-200 hover:border-construction-400 transition-all">
-                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                    <span className="text-base font-black font-heading text-construction-600 font-mono">
-                      {milestone.year}
-                    </span>
-                    <span className="text-xs uppercase tracking-wider font-semibold text-charcoal-500">
-                      Phase {idx + 1}
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-heading font-bold text-navy-950 mb-2">
-                    {milestone.title}
-                  </h3>
-                  <p className="text-sm text-charcoal-700 leading-relaxed">
-                    {milestone.desc}
-                  </p>
-                </div>
+                <h3 className="text-xl font-heading font-bold text-navy-950 mb-2">
+                  {milestone.title}
+                </h3>
+                <p className="text-sm text-charcoal-700 leading-relaxed">
+                  {milestone.desc}
+                </p>
               </div>
             ))}
           </div>
