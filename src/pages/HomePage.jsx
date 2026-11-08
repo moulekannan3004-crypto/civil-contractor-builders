@@ -30,12 +30,18 @@ export default function HomePage({ setCurrentPage, openQuoteModal, setSelectedPr
         {/* Background Image with Crisp Contrast Scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=85"
-            alt="Active civil contracting site with heavy tower cranes and structural concrete foundation"
+            src="./assets/home-hero-construction.jpg"
+            onError={(e) => {
+              if (!e.currentTarget.dataset.retried) {
+                e.currentTarget.dataset.retried = '1';
+                e.currentTarget.src = 'assets/home-hero-construction.jpg';
+              }
+            }}
+            alt="Active civil construction high-rise site with heavy tower cranes at sunset"
             className="w-full h-full object-cover object-center"
           />
           {/* Balanced gradient overlay ensuring the construction site is vividly visible while text is 100% legible */}
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/45 to-navy-950/60" />
           <div className="absolute inset-0 blueprint-grid-dark opacity-10 pointer-events-none" />
         </div>
 
@@ -49,7 +55,7 @@ export default function HomePage({ setCurrentPage, openQuoteModal, setSelectedPr
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight leading-[1.1] mb-6 text-white max-w-4xl mx-auto">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight leading-[1.1] mb-6 text-white max-w-4xl mx-auto drop-shadow-md">
             Building Your Vision with{' '}
             <span className="text-construction-500">
               Strength, Quality & Trust.
@@ -57,7 +63,7 @@ export default function HomePage({ setCurrentPage, openQuoteModal, setSelectedPr
           </h1>
 
           {/* Supporting Text */}
-          <p className="text-base sm:text-lg lg:text-xl text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-slate-100 font-medium leading-relaxed mb-8 max-w-2xl mx-auto drop-shadow-sm">
             From heavy commercial towers and industrial logistics complexes to custom residential estates and civil infrastructure, ApexBuild delivers turnkey construction engineering built to endure for generations.
           </p>
 
