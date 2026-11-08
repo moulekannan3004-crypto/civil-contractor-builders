@@ -125,7 +125,7 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col bg-white dark:bg-navy-950 text-charcoal-800 dark:text-slate-100 antialiased selection:bg-construction-500 selection:text-white ${isDark ? 'dark' : ''}`}>
+    <div className={`min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-white dark:bg-navy-950 text-charcoal-800 dark:text-slate-100 antialiased selection:bg-construction-500 selection:text-white ${isDark ? 'dark' : ''}`}>
       {/* Sticky Main Navigation */}
       <Navbar
         currentPage={currentPage}

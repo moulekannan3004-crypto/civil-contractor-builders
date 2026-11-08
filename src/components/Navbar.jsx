@@ -48,33 +48,33 @@ export default function Navbar({
 
   return (
     <header 
-      className="sticky top-0 z-50 w-full transition-shadow duration-300 shadow-xl border-b border-navy-800"
+      className="sticky top-0 z-50 w-full max-w-full transition-shadow duration-300 shadow-xl border-b border-navy-800 overflow-x-clip"
       style={{ backgroundColor: '#070F19' }}
     >
       {/* Main Navbar - Guaranteed 100% Solid Opaque Navy at All Times (No Transparency Leak on Scroll) */}
       <nav 
-        className="w-full text-white"
+        className="w-full max-w-full text-white"
         style={{ backgroundColor: '#070F19' }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-20 flex items-center justify-between gap-2 lg:gap-3 xl:gap-6">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="h-16 sm:h-20 flex items-center justify-between gap-1.5 sm:gap-2 lg:gap-3 xl:gap-6 min-w-0">
             
             {/* 1. Brand Logo (Left - Aligned & Flexible Sizing) */}
-            <div className="flex items-center justify-start flex-shrink-0">
+            <div className="flex items-center justify-start min-w-0 flex-1 sm:flex-initial">
               <button 
                 onClick={() => handleNavClick('home')}
-                className="flex items-center gap-2 xl:gap-3 text-left group focus:outline-none flex-shrink-0"
+                className="flex items-center gap-2 sm:gap-2.5 xl:gap-3 text-left group focus:outline-none min-w-0"
               >
-                <div className="w-10 h-10 xl:w-11 xl:h-11 rounded-xl bg-construction-500 flex items-center justify-center text-navy-950 font-black shadow-solid-orange group-hover:bg-construction-400 transition-all flex-shrink-0">
-                  <Building className="w-5 h-5 xl:w-6 xl:h-6 stroke-[2.5]" />
+                <div className="w-9 h-9 sm:w-10 sm:h-10 xl:w-11 xl:h-11 rounded-lg sm:rounded-xl bg-construction-500 flex items-center justify-center text-navy-950 font-black shadow-solid-orange group-hover:bg-construction-400 transition-all shrink-0">
+                  <Building className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 stroke-[2.5]" />
                 </div>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center min-w-0">
                   <div className="flex items-center gap-1 leading-none">
-                    <span className="text-lg xl:text-2xl font-black font-heading text-white tracking-wider group-hover:text-construction-400 transition-colors">
+                    <span className="text-base sm:text-lg xl:text-2xl font-black font-heading text-white tracking-wider group-hover:text-construction-400 transition-colors whitespace-nowrap">
                       APEX<span className="text-construction-500">BUILD</span>
                     </span>
                   </div>
-                  <p className="text-[9px] xl:text-[10px] tracking-wider xl:tracking-widest uppercase font-bold text-slate-300 mt-0.5 xl:mt-1 leading-none">
+                  <p className="text-[8px] sm:text-[9px] xl:text-[10px] tracking-tight sm:tracking-wider xl:tracking-widest uppercase font-bold text-slate-300 mt-0.5 xl:mt-1 leading-none whitespace-nowrap truncate">
                     Civil Contractors & Builders
                   </p>
                 </div>
@@ -289,26 +289,27 @@ export default function Navbar({
             </div>
 
             {/* Mobile Controls (Menu Toggle) */}
-            <div className="flex lg:hidden items-center gap-2">
+            <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0">
               <button
                 type="button"
                 onClick={toggleTheme}
-                className="w-9 h-9 rounded-full bg-navy-900 text-white border border-slate-700 flex items-center justify-center"
+                aria-label="Toggle visual theme"
+                className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-navy-900 text-white border border-slate-700 flex items-center justify-center shrink-0 hover:bg-navy-800 transition-colors"
               >
-                {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-200" />}
+                {isDark ? <Sun className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400" /> : <Moon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-200" />}
               </button>
               <button
                 onClick={openQuoteModal}
-                className="px-3 py-1.5 rounded-lg bg-construction-500 text-white font-bold text-xs shadow-sm"
+                className="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-lg bg-construction-500 hover:bg-construction-600 active:bg-construction-700 text-white font-bold text-[11px] sm:text-xs shadow-sm shrink-0 transition-colors"
               >
                 Quote
               </button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle navigation menu"
-                className="p-2 rounded-lg bg-navy-900 text-white border border-slate-700 hover:bg-navy-800 focus:outline-none"
+                className="p-1.5 sm:p-2 rounded-lg bg-navy-900 text-white border border-slate-700 hover:bg-navy-800 focus:outline-none shrink-0 transition-colors"
               >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
               </button>
             </div>
 

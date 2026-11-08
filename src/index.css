@@ -7,6 +7,23 @@
     font-family: 'Inter', sans-serif;
     color: #252B32;
     background-color: #FFFFFF;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -15,6 +32,12 @@
     color: #142B45;
     letter-spacing: -0.02em;
   }
+}
+
+/* Bulletproof Global Horizontal Overflow Defense across All Mobile Devices */
+html, body, #root {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 
 /* =========================================================================

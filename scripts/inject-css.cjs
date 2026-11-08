@@ -101,7 +101,7 @@ const pages = [
 pages.forEach((page) => {
   const filePath = path.join(rootDir, page.fileName);
   const htmlContent = `<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=${buildVersion}" />
@@ -125,8 +125,8 @@ pages.forEach((page) => {
 ${cssContent}
     </style>
   </head>
-  <body class="font-sans text-charcoal-800 bg-white antialiased selection:bg-construction-500 selection:text-white">
-    <div id="root"></div>
+  <body class="font-sans text-charcoal-800 bg-white antialiased selection:bg-construction-500 selection:text-white overflow-x-hidden w-full max-w-full">
+    <div id="root" class="overflow-x-hidden w-full max-w-full"></div>
     <script type="module" src="./assets/index.js?v=${buildVersion}"></script>
   </body>
 </html>`;

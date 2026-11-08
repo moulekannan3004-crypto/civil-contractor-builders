@@ -167,7 +167,7 @@ export default function HomePage({ setCurrentPage, openQuoteModal, setSelectedPr
               </div>
 
               {/* Decorative engineering corner accent */}
-              <div className="absolute -top-4 -right-4 w-28 h-28 bg-construction-500/10 rounded-2xl -z-10 border border-construction-500/20" />
+              <div className="hidden sm:block absolute -top-4 -right-4 w-28 h-28 bg-construction-500/10 rounded-2xl -z-10 border border-construction-500/20" />
             </div>
 
             {/* Text Column */}
