@@ -12,8 +12,9 @@ export const projectsData = [
     contractValue: '$48.5 Million',
     structuralType: 'Reinforced Concrete Core & Post-Tensioned Transfer Slabs',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/skyline-commercial-tech-hub.jpg',
     gallery: [
+      './assets/skyline-commercial-tech-hub.jpg',
       'https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?auto=format&fit=crop&w=1200&q=80'
