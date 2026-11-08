@@ -13,7 +13,7 @@ export const blogArticles = [
     },
     publishedDate: 'November 2, 2026',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1523848309072-c199db53f137?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/deep-foundation-engineering.jpg',
     excerpt: 'Explore the geotechnical mechanics behind large-diameter cast-in-situ bored piles, bentonite slurry stabilization, and hydrostatic pressure containment in coastal water tables.',
     content: [
       'Constructing multi-story commercial towers or industrial infrastructure adjacent to riverfronts or coastal zones demands advanced geotechnical interventions. Traditional shallow footings are rendered ineffective due to saturated silts, loose alluvial deposits, and elevated hydrostatic pressure.',
