@@ -166,16 +166,16 @@ export default function Home2Page({ setCurrentPage, openQuoteModal, setSelectedP
               </p>
 
               {/* Key Highlights Pill Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-200 bg-navy-900/80 p-3 rounded-lg border border-navy-800 shadow-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-2">
+                <div className="flex items-center gap-2.5 text-xs font-bold text-slate-200 bg-navy-900/80 px-3.5 py-3 rounded-lg border border-navy-800 shadow-sm">
                   <CheckCircle2 className="w-4 h-4 text-construction-400 flex-shrink-0" />
                   <span>Up to 60m Clear Span</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-200 bg-navy-900/80 p-3 rounded-lg border border-navy-800 shadow-sm">
+                <div className="flex items-center gap-2.5 text-xs font-bold text-slate-200 bg-navy-900/80 px-3.5 py-3 rounded-lg border border-navy-800 shadow-sm">
                   <CheckCircle2 className="w-4 h-4 text-construction-400 flex-shrink-0" />
                   <span>Laser Superflat Floors</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-200 bg-navy-900/80 p-3 rounded-lg border border-navy-800 shadow-sm">
+                <div className="flex items-center gap-2.5 text-xs font-bold text-slate-200 bg-navy-900/80 px-3.5 py-3 rounded-lg border border-navy-800 shadow-sm">
                   <CheckCircle2 className="w-4 h-4 text-construction-400 flex-shrink-0" />
                   <span>40% Faster Handover</span>
                 </div>
@@ -201,18 +201,18 @@ export default function Home2Page({ setCurrentPage, openQuoteModal, setSelectedP
               </div>
 
               {/* Client Stats Badge */}
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-navy-800 text-slate-400 text-xs">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-6 border-t border-navy-800 text-slate-400 text-xs">
                 <div>
-                  <strong className="text-white text-lg font-black block font-heading text-construction-400">2.8M+ Sq.Ft</strong>
-                  <span className="text-[11px] text-slate-300">Industrial Space Built</span>
+                  <strong className="text-white text-base sm:text-lg font-black block font-heading text-construction-400">2.8M+ Sq.Ft</strong>
+                  <span className="text-[10px] sm:text-[11px] text-slate-300">Industrial Space Built</span>
                 </div>
-                <div className="border-l border-navy-800 pl-4">
-                  <strong className="text-white text-lg font-black block font-heading text-construction-400">OSHA Star</strong>
-                  <span className="text-[11px] text-slate-300">Zero Lost Time Incidents</span>
+                <div className="border-l border-navy-800 pl-2 sm:pl-4">
+                  <strong className="text-white text-base sm:text-lg font-black block font-heading text-construction-400">OSHA Star</strong>
+                  <span className="text-[10px] sm:text-[11px] text-slate-300">Zero Lost Time Incidents</span>
                 </div>
-                <div className="border-l border-navy-800 pl-4">
-                  <strong className="text-white text-lg font-black block font-heading text-construction-400">Class-A</strong>
-                  <span className="text-[11px] text-slate-300">Licensed EPC Contractor</span>
+                <div className="border-l border-navy-800 pl-2 sm:pl-4">
+                  <strong className="text-white text-base sm:text-lg font-black block font-heading text-construction-400">Class-A</strong>
+                  <span className="text-[10px] sm:text-[11px] text-slate-300">Licensed EPC Contractor</span>
                 </div>
               </div>
             </div>
