@@ -173,8 +173,9 @@ export const projectsData = [
     contractValue: '$76.0 Million',
     structuralType: 'Pre-Stressed Concrete (PSC) Box Girders on Cast-in-Situ Pier Columns',
     featured: true,
-    thumbnail: 'https://images.unsplash.com/photo-1662378523353-3e8de8f19538?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/metro-highway-interchange-flyover.jpg',
     gallery: [
+      './assets/metro-highway-interchange-flyover.jpg',
       'https://images.unsplash.com/photo-1792745826463-2edec93fc918?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1769265114267-9b3c74e14a54?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1773894653260-fed7da65f31e?auto=format&fit=crop&w=1200&q=80'
