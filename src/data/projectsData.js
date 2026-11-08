@@ -291,8 +291,9 @@ export const projectsData = [
     contractValue: '$21.7 Million',
     structuralType: 'Sulfate-Resistant Marine Concrete Frame with Coastal Anchoring',
     featured: false,
-    thumbnail: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80',
+    thumbnail: './assets/oceanside-commercial-waterfront-plaza.jpg',
     gallery: [
+      './assets/oceanside-commercial-waterfront-plaza.jpg',
       'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1200&q=80'
