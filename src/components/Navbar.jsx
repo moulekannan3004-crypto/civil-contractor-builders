@@ -47,17 +47,20 @@ export default function Navbar({
   const isBlogActive = currentPage === 'blog' || currentPage === 'blog-details';
 
   return (
-    <header 
-      className="sticky top-0 z-50 w-full max-w-full transition-shadow duration-300 shadow-xl border-b border-navy-800 overflow-x-clip"
-      style={{ backgroundColor: '#070F19' }}
-    >
-      {/* Main Navbar - Guaranteed 100% Solid Opaque Navy at All Times (No Transparency Leak on Scroll) */}
-      <nav 
-        className="w-full max-w-full text-white"
+    <>
+      <header 
+        className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 border-b border-navy-800 ${
+          isScrolled ? 'shadow-2xl' : 'shadow-xl'
+        }`}
         style={{ backgroundColor: '#070F19' }}
       >
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-          <div className="h-16 sm:h-20 flex items-center justify-between gap-1.5 sm:gap-2 lg:gap-3 xl:gap-6 min-w-0">
+        {/* Main Navbar - Guaranteed 100% Solid Opaque Navy at All Times (No Transparency Leak on Scroll) */}
+        <nav 
+          className="w-full text-white"
+          style={{ backgroundColor: '#070F19' }}
+        >
+          <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div className="h-16 sm:h-20 flex items-center justify-between gap-1.5 sm:gap-2 lg:gap-3 xl:gap-6 min-w-0">
             
             {/* 1. Brand Logo (Left - Aligned & Flexible Sizing) */}
             <div className="flex items-center justify-start min-w-0 flex-1 sm:flex-initial">
@@ -426,5 +429,9 @@ export default function Navbar({
         )}
       </nav>
     </header>
+
+    {/* Spacer to preserve natural document flow under fixed navbar */}
+    <div className="h-16 sm:h-20 w-full shrink-0" aria-hidden="true" />
+  </>
   );
 }
