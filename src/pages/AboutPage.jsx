@@ -142,10 +142,10 @@ export default function AboutPage({ setCurrentPage, openQuoteModal }) {
               </div>
             </div>
 
-            {/* Visual Side: 2x2 Perfectly Aligned Symmetrical Grid */}
-            <div className="h-full grid grid-cols-2 grid-rows-2 gap-4 sm:gap-5 min-h-[500px] lg:min-h-0">
+            {/* Visual Side: Responsive 2x2 Grid (1-Col on Mobile, 2x2 on Tablet/Desktop) */}
+            <div className="h-full grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-4 sm:gap-5 min-h-0">
               {/* Box 1: Top-Left Architectural Drafting Image */}
-              <div className="h-full min-h-[220px] lg:min-h-0 rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+              <div className="h-56 sm:h-full min-h-[200px] sm:min-h-[220px] lg:min-h-0 rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
                 <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Architectural structure and engineering blueprints"
                   onError={(e) => { e.currentTarget.src = 'assets/about-civil-engineers.jpg'; }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -153,7 +153,7 @@ export default function AboutPage({ setCurrentPage, openQuoteModal }) {
               </div>
 
               {/* Box 2: Top-Right 10-Year Warranty Card */}
-              <div className="h-full min-h-[220px] lg:min-h-0 p-5 sm:p-6 rounded-xl bg-construction-500 text-navy-950 flex flex-col justify-between shadow-sm">
+              <div className="min-h-[200px] sm:min-h-[220px] lg:min-h-0 p-5 sm:p-6 rounded-xl bg-construction-500 text-navy-950 flex flex-col justify-between shadow-sm">
                 <div>
                   <div className="w-10 h-10 rounded-lg bg-navy-950/10 flex items-center justify-center mb-3">
                     <ShieldCheck className="w-5 h-5 text-navy-950" />
@@ -165,14 +165,14 @@ export default function AboutPage({ setCurrentPage, openQuoteModal }) {
                     Backed by institutional warranty reserves for all reinforced concrete and structural steel.
                   </p>
                 </div>
-                <div className="pt-3 border-t border-navy-950/15 flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-navy-950/75">
-                  <span>Institutional Grade</span>
-                  <span>100% Insured</span>
+                <div className="pt-3 border-t border-navy-950/15 flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-navy-950/75">
+                  <span className="whitespace-nowrap">Institutional Grade</span>
+                  <span className="whitespace-nowrap">100% Insured</span>
                 </div>
               </div>
 
               {/* Box 3: Bottom-Left Award-Winning Safety Card */}
-              <div className="h-full min-h-[220px] lg:min-h-0 p-5 sm:p-6 rounded-xl bg-navy-950 text-white flex flex-col justify-between shadow-sm border border-navy-800">
+              <div className="min-h-[200px] sm:min-h-[220px] lg:min-h-0 p-5 sm:p-6 rounded-xl bg-navy-950 text-white flex flex-col justify-between shadow-sm border border-navy-800">
                 <div>
                   <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center mb-3">
                     <Trophy className="w-5 h-5 text-construction-400" />
@@ -184,14 +184,14 @@ export default function AboutPage({ setCurrentPage, openQuoteModal }) {
                     Recognized with the National Builders HSE Excellence citation three years running.
                   </p>
                 </div>
-                <div className="pt-3 border-t border-navy-800 flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-construction-400">
-                  <span>OSHA VPP Star</span>
-                  <span>Zero Incidents</span>
+                <div className="pt-3 border-t border-navy-800 flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-construction-400">
+                  <span className="whitespace-nowrap">OSHA VPP Star</span>
+                  <span className="whitespace-nowrap">Zero Incidents</span>
                 </div>
               </div>
 
               {/* Box 4: Bottom-Right Civil Construction Image */}
-              <div className="h-full min-h-[220px] lg:min-h-0 rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
+              <div className="h-56 sm:h-full min-h-[200px] sm:min-h-[220px] lg:min-h-0 rounded-xl overflow-hidden shadow-sm border border-slate-200 group">
                 <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" alt="Civil construction site and structural engineering works"
                   onError={(e) => { e.currentTarget.src = 'assets/about-civil-engineers.jpg'; }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
