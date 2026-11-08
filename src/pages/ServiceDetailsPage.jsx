@@ -49,11 +49,11 @@ export default function ServiceDetailsPage({ setCurrentPage, openQuoteModal, sel
       <section className="bg-navy-950 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={service.image}
+            src={service.heroImage || service.image}
             onError={(e) => {
               if (!e.currentTarget.dataset.retried) {
                 e.currentTarget.dataset.retried = '1';
-                e.currentTarget.src = 'assets/about-civil-engineers.jpg';
+                e.currentTarget.src = 'assets/civil-engineering-infrastructure.jpg';
               }
             }}
             alt={service.title}

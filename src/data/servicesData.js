@@ -150,6 +150,7 @@ export const servicesData = [
     shortDesc: 'Large-scale infrastructure, asphalt & concrete roads, stormwater drainage networks, and earthworks.',
     fullDesc: 'Our civil works division handles massive municipal, industrial, and township infrastructure development. We possess our own fleet of heavy earthmoving equipment, motor graders, compactors, and asphalt pavers to deliver paved road networks, culverts, retaining walls, flood channels, and utility trenching with laser precision.',
     image: './assets/civil-engineering-works.jpg',
+    heroImage: './assets/civil-engineering-infrastructure.jpg',
     icon: 'Wrench',
     category: 'Civil Works',
     keyFeatures: [
