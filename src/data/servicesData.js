@@ -207,7 +207,7 @@ export const servicesData = [
     title: 'Project Management & Consultancy',
     shortDesc: 'Full lifecycle construction management, cost control, timeline scheduling, and strict site quality audits.',
     fullDesc: 'Building with excellence requires meticulous organization and strict control over costs and schedules. We provide comprehensive construction project management consultancy (PMC), guiding clients through site feasibility, cost estimation, contractor vetting, procurement logistics, safety compliance, and milestone sign-offs.',
-    image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80',
+    image: './assets/project-management-consultancy.jpg',
     icon: 'ClipboardCheck',
     category: 'Consultancy',
     keyFeatures: [
