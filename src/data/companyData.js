@@ -209,19 +209,27 @@ export const clientTestimonials = [
 
 export const faqs = [
   {
-    q: 'How does your quotation and estimating process work?',
-    a: 'Once you submit your project details through our quotation form or direct consultation, our estimating team conducts an initial review within 24 hours. We examine drawings, scope requirements, and site logistics to provide a preliminary budget estimation, followed by a detailed line-item Bill of Quantities (BOQ).'
+    q: 'How quickly will I receive a quote or consultation response after submitting this form?',
+    a: 'Our senior quantity surveyors and structural estimating desk review all incoming inquiries within 24 business hours. If preliminary architectural drawings or BOQ parameters are provided, we typically deliver an initial feasibility assessment and budget estimation within 48 to 72 hours.'
   },
   {
-    q: 'Do you manage municipal permits and building approvals?',
-    a: 'Yes, our comprehensive civil contracting service includes liaising with municipal building departments, fire authorities, environmental boards, and utility providers to ensure all zoning and construction permits are secured.'
+    q: 'Can your civil engineering team conduct an on-site feasibility inspection before we finalize blueprints?',
+    a: 'Yes. We regularly dispatch licensed civil engineers and geotechnical specialists to inspect your construction site, assess soil stability, analyze heavy machinery access, evaluate utility tie-in feasibility, and identify potential topographic challenges before you commit to final blueprints.'
   },
   {
-    q: 'What warranties and guarantees do you provide on completed buildings?',
-    a: 'We provide an industry-leading 10-year comprehensive structural warranty on all reinforced concrete and structural steel frameworks, alongside manufacturer warranties on MEP systems, roofing, and architectural finishes.'
+    q: 'Do you manage municipal permits, zoning clearances, and building approvals?',
+    a: 'Yes, our comprehensive civil contracting service includes liaising with municipal building departments, fire authorities, environmental boards, and utility providers to ensure all zoning variances, environmental impact reports, and construction permits are secured without project bottlenecks.'
   },
   {
-    q: 'Can you handle fast-track or phased construction schedules?',
-    a: 'Absolutely. Utilizing advanced Building Information Modeling (BIM), pre-cast and pre-engineered components, and round-the-clock shift planning, we frequently execute fast-track commercial and industrial projects without compromising safety or quality.'
+    q: 'What architectural drawings or project documents should I prepare for an accurate estimate?',
+    a: 'To deliver an exact line-item Bill of Quantities (BOQ), architectural floor plans, structural framing blueprints, elevation drawings, and soil test reports (geotechnical boring logs) are ideal. However, if you are at an early concept stage, our pre-construction engineering team can assist in drafting preliminary space plans and budget models.'
+  },
+  {
+    q: 'Is our project information, land location, and proprietary design protected under NDA?',
+    a: 'Absolutely. Every inquiry, architectural blueprint, structural specification, and commercial estimate submitted to ApexBuild is strictly governed by non-disclosure and intellectual property protection standards. We are also glad to countersign your corporate NDA prior to technical data exchange.'
+  },
+  {
+    q: 'What warranties, insurance coverage, and guarantees back your civil construction work?',
+    a: 'ApexBuild carries comprehensive $20M general liability insurance, full builder’s risk coverage, and workers’ compensation. Every completed facility is backed by our industry-leading 10-Year Structural Integrity Warranty on reinforced concrete foundations, grade beams, and load-bearing framing.'
   }
 ];

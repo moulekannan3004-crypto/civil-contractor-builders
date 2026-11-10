@@ -13,12 +13,16 @@ import {
   ExternalLink,
   Copy,
   Check,
-  FileText
+  FileText,
+  ChevronDown,
+  ChevronUp,
+  HelpCircle
 } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
-import { companyInfo } from '../data/companyData';
+import { companyInfo, faqs } from '../data/companyData';
 
 export default function ContactPage() {
+  const [openFaq, setOpenFaq] = useState(0);
   const [formData, setFormData] = useState({
     fullName: '',
     phone: '',
@@ -608,7 +612,104 @@ export default function ContactPage() {
       </section>
 
       {/* =========================================================================
-          SECTION C: EMBEDDED GOOGLE MAP & SITE LOGISTICS
+          SECTION C: FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION)
+          ========================================================================= */}
+      <section className="py-16 sm:py-20 bg-surface-light dark:bg-navy-950 border-t border-slate-200 dark:border-navy-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest text-construction-600 bg-construction-500/10 px-3 py-1 rounded-full border border-construction-500/30 inline-flex items-center gap-1.5">
+              <HelpCircle className="w-3.5 h-3.5" />
+              <span>Got Questions Before Reaching Out?</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-navy-950 dark:text-white mt-3">
+              Frequently Asked Questions &bull; Pre-Construction Desk
+            </h2>
+            <div className="flex items-center justify-center gap-2 my-4">
+              <div className="h-1.5 w-14 bg-construction-500 rounded-full"></div>
+              <div className="h-1.5 w-3.5 bg-navy-800 rounded-full"></div>
+              <div className="h-1.5 w-1.5 bg-navy-600 rounded-full"></div>
+            </div>
+            <p className="text-xs sm:text-sm text-charcoal-600 dark:text-slate-300 max-w-2xl mx-auto">
+              Everything you need to know about our quote turnaround times, site feasibility inspections, municipal approvals, and architectural documentation.
+            </p>
+          </div>
+
+          {/* Accordion List */}
+          <div className="space-y-3 sm:space-y-4">
+            {faqs.map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div 
+                  key={idx}
+                  className="bg-white dark:bg-navy-900 rounded-xl border border-slate-200 dark:border-navy-800 shadow-sm overflow-hidden transition-all duration-200"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? -1 : idx)}
+                    className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-sm sm:text-base text-navy-950 dark:text-white hover:text-construction-600 dark:hover:text-construction-400 transition-colors focus:outline-none"
+                    aria-expanded={isOpen}
+                    aria-controls={`contact-faq-answer-${idx}`}
+                  >
+                    <span className="flex items-start gap-2.5 sm:gap-3">
+                      <span className="text-xs font-black text-construction-500 bg-construction-50 dark:bg-navy-800 px-2 py-0.5 rounded shrink-0 mt-0.5">
+                        0{idx + 1}
+                      </span>
+                      <span>{faq.q}</span>
+                    </span>
+                    {isOpen ? (
+                      <ChevronUp className="w-5 h-5 text-construction-500 shrink-0 transition-transform" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-slate-400 shrink-0 transition-transform" />
+                    )}
+                  </button>
+
+                  {isOpen && (
+                    <div 
+                      id={`contact-faq-answer-${idx}`}
+                      className="px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-navy-800 animate-fadeIn"
+                    >
+                      <p>{faq.a}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Bottom Helpful Contact Banner */}
+          <div className="mt-10 p-6 sm:p-8 bg-navy-950 rounded-2xl text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-navy-800">
+            <div className="space-y-1 text-center sm:text-left">
+              <h4 className="text-base sm:text-lg font-black font-heading">
+                Have a unique specification or government tender?
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Speak directly with our Chief Estimator for tailored RFPs and joint-venture bidding.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
+              <a
+                href={`tel:${companyInfo.phoneRaw}`}
+                className="px-4 py-2.5 rounded bg-construction-500 hover:bg-construction-600 text-white font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 shadow-solid-orange transition-all"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>Call {companyInfo.phone}</span>
+              </a>
+              <a
+                href={`https://wa.me/${companyInfo.phoneRaw}?text=${encodeURIComponent(companyInfo.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2.5 rounded bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 transition-all"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                <span>WhatsApp Desk</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          SECTION D: EMBEDDED GOOGLE MAP & SITE LOGISTICS
           ========================================================================= */}
       <section className="py-12 bg-surface-light border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
