@@ -5,6 +5,7 @@ import {
   X, 
   ArrowRight, 
   ArrowLeft,
+  ArrowRightLeft,
   ChevronDown,
   Sun, 
   Moon, 
@@ -268,41 +269,22 @@ export default function Navbar({
             {/* 3. Right Action Controls (Uniform Height h-9/h-10, Perfect Aspect Ratio & High-Contrast Styling) */}
             <div className="hidden lg:flex items-center justify-end gap-1.5 xl:gap-2.5 flex-shrink-0">
               
-              {/* LTR / RTL Standard Arrow Direction Segmented Switch */}
-              <div 
-                className="h-9 xl:h-10 p-0.5 xl:p-1 rounded-full bg-navy-950 border border-slate-700/80 hover:border-slate-500 inline-flex items-center gap-0.5 xl:gap-1 transition-all shadow-inner flex-shrink-0"
-                role="group"
-                aria-label="Layout Direction: Left-to-Right (LTR) or Right-to-Left (RTL)"
+              {/* LTR ⇄ RTL Unified Direction Switch Button (Matches User Reference Image) */}
+              <button
+                type="button"
+                onClick={toggleRtl}
+                title={`Layout: ${isRtl ? 'Right-to-Left (RTL)' : 'Left-to-Right (LTR)'} - Click to switch`}
+                aria-label={`Switch layout to ${isRtl ? 'LTR' : 'RTL'}`}
+                className="h-9 xl:h-10 px-3 xl:px-3.5 rounded-lg bg-slate-100 hover:bg-white text-slate-800 hover:text-slate-950 border border-slate-300 hover:border-slate-400 inline-flex items-center justify-center gap-2 transition-all shadow-sm flex-shrink-0 cursor-pointer group"
               >
-                <button
-                  type="button"
-                  onClick={() => isRtl && toggleRtl()}
-                  title="Layout: Left-to-Right (LTR)"
-                  aria-pressed={!isRtl}
-                  className={`h-6 xl:h-7 px-2 xl:px-2.5 rounded-full text-[10px] xl:text-[11px] font-black tracking-wider inline-flex items-center justify-center gap-1.5 transition-all duration-300 focus:outline-none ${
-                    !isRtl 
-                      ? 'bg-construction-500 text-white shadow-md' 
-                      : 'text-slate-400 hover:text-white'
-                  }`}
-                >
-                  <span>LTR</span>
-                  <ArrowRight className="w-3 h-3 xl:w-3.5 xl:h-3.5 stroke-[2.5]" />
-                </button>
-                <button
-                  type="button"
-                  onClick={() => !isRtl && toggleRtl()}
-                  title="Layout: Right-to-Left (RTL)"
-                  aria-pressed={isRtl}
-                  className={`h-6 xl:h-7 px-2 xl:px-2.5 rounded-full text-[10px] xl:text-[11px] font-black tracking-wider inline-flex items-center justify-center gap-1.5 transition-all duration-300 focus:outline-none ${
-                    isRtl 
-                      ? 'bg-construction-500 text-white shadow-md' 
-                      : 'text-slate-400 hover:text-white'
-                  }`}
-                >
-                  <ArrowLeft className="w-3 h-3 xl:w-3.5 xl:h-3.5 stroke-[2.5]" />
-                  <span>RTL</span>
-                </button>
-              </div>
+                <span className={`text-[11px] xl:text-xs tracking-wider transition-colors ${!isRtl ? 'text-construction-600 font-black' : 'text-slate-600 font-bold'}`}>
+                  LTR
+                </span>
+                <ArrowRightLeft className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-slate-700 group-hover:text-slate-900 stroke-[2.5] flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
+                <span className={`text-[11px] xl:text-xs tracking-wider transition-colors ${isRtl ? 'text-construction-600 font-black' : 'text-slate-600 font-bold'}`}>
+                  RTL
+                </span>
+              </button>
 
               {/* Dark / Light Mode Toggle (Guaranteed 1:1 Circular Button) */}
               <button
@@ -330,19 +312,21 @@ export default function Navbar({
 
             {/* Mobile Controls (Menu Toggle & Standard Direction/Theme Toggles) */}
             <div className="flex lg:hidden items-center gap-1 sm:gap-1.5 shrink-0">
-              {/* Standard LTR / RTL Direction Symbol Icon Button */}
+              {/* LTR ⇄ RTL Unified Direction Switch Button (Mobile Header) */}
               <button
                 type="button"
                 onClick={toggleRtl}
-                title={isRtl ? 'Layout: RTL (Click to switch to LTR)' : 'Layout: LTR (Click to switch to RTL)'}
-                aria-label={isRtl ? 'Switch layout to LTR' : 'Switch layout to RTL'}
-                className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-navy-900 text-white border border-slate-700 flex items-center justify-center shrink-0 hover:bg-navy-800 transition-colors"
+                title={`Layout: ${isRtl ? 'RTL' : 'LTR'} - Tap to switch`}
+                aria-label={`Switch layout to ${isRtl ? 'LTR' : 'RTL'}`}
+                className="h-8 sm:h-9 px-2 sm:px-2.5 rounded-lg bg-slate-100 hover:bg-white text-slate-800 border border-slate-300 inline-flex items-center justify-center gap-1 sm:gap-1.5 transition-all shadow-sm shrink-0"
               >
-                {isRtl ? (
-                  <ArrowLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-construction-400 stroke-[2.5]" />
-                ) : (
-                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-200 stroke-[2.5]" />
-                )}
+                <span className={`text-[10px] sm:text-[11px] tracking-wider ${!isRtl ? 'text-construction-600 font-black' : 'text-slate-600 font-bold'}`}>
+                  LTR
+                </span>
+                <ArrowRightLeft className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-700 stroke-[2.5] shrink-0" />
+                <span className={`text-[10px] sm:text-[11px] tracking-wider ${isRtl ? 'text-construction-600 font-black' : 'text-slate-600 font-bold'}`}>
+                  RTL
+                </span>
               </button>
 
               <button
@@ -456,39 +440,21 @@ export default function Navbar({
 
             {/* Mobile Actions */}
             <div className="pt-4 border-t border-navy-800 space-y-3">
-              {/* Standard LTR / RTL Direction Control */}
-              <div 
-                className="p-1 rounded-xl bg-navy-950 border border-slate-700 flex items-center gap-1"
-                role="group"
-                aria-label="Layout Direction: Left-to-Right (LTR) or Right-to-Left (RTL)"
+              {/* LTR ⇄ RTL Unified Direction Switch Button (Mobile Drawer) */}
+              <button
+                type="button"
+                onClick={toggleRtl}
+                aria-label={`Switch layout to ${isRtl ? 'LTR' : 'RTL'}`}
+                className="w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-white text-slate-800 border border-slate-300 flex items-center justify-center gap-3 transition-all shadow-sm font-sans"
               >
-                <button
-                  type="button"
-                  onClick={() => isRtl && toggleRtl()}
-                  aria-pressed={!isRtl}
-                  className={`flex-1 py-2 px-3 rounded-lg text-xs font-black tracking-wider flex items-center justify-center gap-2 transition-all ${
-                    !isRtl 
-                      ? 'bg-construction-500 text-white shadow-md' 
-                      : 'text-slate-400 hover:text-white'
-                  }`}
-                >
-                  <span>LTR</span>
-                  <ArrowRight className="w-4 h-4 stroke-[2.5]" />
-                </button>
-                <button
-                  type="button"
-                  onClick={() => !isRtl && toggleRtl()}
-                  aria-pressed={isRtl}
-                  className={`flex-1 py-2 px-3 rounded-lg text-xs font-black tracking-wider flex items-center justify-center gap-2 transition-all ${
-                    isRtl 
-                      ? 'bg-construction-500 text-white shadow-md' 
-                      : 'text-slate-400 hover:text-white'
-                  }`}
-                >
-                  <ArrowLeft className="w-4 h-4 stroke-[2.5]" />
-                  <span>RTL</span>
-                </button>
-              </div>
+                <span className={`text-xs tracking-wider ${!isRtl ? 'text-construction-600 font-black' : 'text-slate-600 font-bold'}`}>
+                  LTR
+                </span>
+                <ArrowRightLeft className="w-4 h-4 text-slate-700 stroke-[2.5]" />
+                <span className={`text-xs tracking-wider ${isRtl ? 'text-construction-600 font-black' : 'text-slate-600 font-bold'}`}>
+                  RTL
+                </span>
+              </button>
 
               <button
                 onClick={() => {
