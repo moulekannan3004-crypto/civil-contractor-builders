@@ -9,13 +9,17 @@ import {
   FileText, 
   BookOpen, 
   Download, 
-  CheckCircle2
+  CheckCircle2,
+  ChevronDown,
+  ChevronUp,
+  HelpCircle
 } from 'lucide-react';
-import { blogArticles } from '../data/blogData';
+import { blogArticles, blogFaqs } from '../data/blogData';
 
 export default function BlogPage({ setCurrentPage, setSelectedArticleSlug }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [bookmarkedArticles, setBookmarkedArticles] = useState([]);
+  const [openFaq, setOpenFaq] = useState(0);
 
   const toggleBookmark = (id, e) => {
     e.stopPropagation();
@@ -264,6 +268,93 @@ export default function BlogPage({ setCurrentPage, setSelectedArticleSlug }) {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* 3. ENGINEERING KNOWLEDGE BASE FAQS ACCORDION */}
+      <section className="py-16 sm:py-20 bg-white dark:bg-navy-950 border-t border-slate-200 dark:border-navy-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest text-construction-600 bg-construction-500/10 px-3 py-1 rounded-full border border-construction-500/30 inline-flex items-center gap-1.5">
+              <HelpCircle className="w-3.5 h-3.5" />
+              <span>Engineering Journal & Research</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-navy-950 dark:text-white mt-3">
+              Frequently Asked Questions &bull; Technical Articles
+            </h2>
+            <div className="flex items-center justify-center gap-2 my-4">
+              <div className="h-1.5 w-14 bg-construction-500 rounded-full"></div>
+              <div className="h-1.5 w-3.5 bg-navy-800 rounded-full"></div>
+              <div className="h-1.5 w-1.5 bg-navy-600 rounded-full"></div>
+            </div>
+            <p className="text-xs sm:text-sm text-charcoal-600 dark:text-slate-300 max-w-2xl mx-auto">
+              Answers regarding our engineering publications, research citations, 2026 cost estimation models, and technical consultations.
+            </p>
+          </div>
+
+          {/* Accordion List */}
+          <div className="space-y-3 sm:space-y-4">
+            {blogFaqs.map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div 
+                  key={idx}
+                  className="bg-slate-50 dark:bg-navy-900 rounded-xl border border-slate-200 dark:border-navy-800 shadow-sm overflow-hidden transition-all duration-200"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? -1 : idx)}
+                    className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-sm sm:text-base text-navy-950 dark:text-white hover:text-construction-600 dark:hover:text-construction-400 transition-colors focus:outline-none"
+                    aria-expanded={isOpen}
+                    aria-controls={`blog-faq-answer-${idx}`}
+                  >
+                    <span className="flex items-start gap-2.5 sm:gap-3">
+                      <span className="text-xs font-black text-construction-500 bg-construction-100 dark:bg-navy-800 px-2 py-0.5 rounded shrink-0 mt-0.5">
+                        0{idx + 1}
+                      </span>
+                      <span>{faq.q}</span>
+                    </span>
+                    {isOpen ? (
+                      <ChevronUp className="w-5 h-5 text-construction-500 shrink-0 transition-transform" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-slate-400 shrink-0 transition-transform" />
+                    )}
+                  </button>
+
+                  {isOpen && (
+                    <div 
+                      id={`blog-faq-answer-${idx}`}
+                      className="px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200 dark:border-navy-800 animate-fadeIn"
+                    >
+                      <p>{faq.a}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Prompt Banner */}
+          <div className="mt-10 p-6 sm:p-8 bg-navy-950 rounded-2xl text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-navy-800">
+            <div className="space-y-1 text-center sm:text-left">
+              <h4 className="text-base sm:text-lg font-black font-heading">
+                Have a project-specific technical inquiry?
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Connect directly with our Chief Structural Engineer for peer review and site audits.
+              </p>
+            </div>
+            <button
+              onClick={() => {
+                if (setCurrentPage) setCurrentPage('contact');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="px-5 py-3 rounded bg-construction-500 hover:bg-construction-600 text-white font-heading font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 shadow-solid-orange transition-all shrink-0"
+            >
+              <span>Contact Engineering Desk</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </section>
     </div>

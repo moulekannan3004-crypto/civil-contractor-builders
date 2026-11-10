@@ -165,3 +165,30 @@ export const blogCategories = [
   { id: 'safety', label: 'Safety & OSHA' },
   { id: 'materials', label: 'Sustainable Materials' }
 ];
+
+export const blogFaqs = [
+  {
+    q: 'How often does ApexBuild publish technical construction articles and engineering whitepapers?',
+    a: 'Our virtual design team, senior structural engineers, and field safety directors publish two to three peer-reviewed technical whitepapers and field analysis case studies monthly, highlighting breakthroughs in geotechnical piling, BIM clash prevention, sustainable concrete formulations, and OSHA jobsite safety.'
+  },
+  {
+    q: 'Can our architectural or property development team cite or reference your engineering research?',
+    a: 'Yes. All technical whitepapers, cost estimation tables, and geotechnical case studies published in our knowledge base are open for educational, academic, and pre-construction planning reference under standard attribution to ApexBuild Civil Contractors & Builders.'
+  },
+  {
+    q: 'Are the construction cost figures and material price estimates updated for 2026?',
+    a: 'Yes. Our estimating desk continually adjusts our cost benchmarks, square-foot rate models, and steel escalation indices against actual regional vendor mill prices and trade labor rates to ensure market accuracy.'
+  },
+  {
+    q: 'Can I request an in-depth case study or technical analysis on a specific construction topic?',
+    a: 'Absolutely. If your engineering team is evaluating deep foundation techniques, heavy industrial PEB spans, seismic retrofitting, or green concrete alternatives for an upcoming RFP, submit a topic request through our Contact page or email our technical desk directly at info@apexbuildcivil.com.'
+  },
+  {
+    q: 'How does 5D BIM modeling integrate with the technical whitepapers published here?',
+    a: 'Each BIM case study features real-world Revit, Tekla, and Navisworks workflows tested on our commercial and industrial job sites, illustrating how 4D schedule sequencing and 5D cost-loaded digital twins eliminate on-site clashes and prevent budget overruns.'
+  },
+  {
+    q: 'Do your licensed professional engineers (PE) provide project-specific technical consultations?',
+    a: 'Yes. Beyond publishing research, our executive engineering desk offers direct pre-construction feasibility audits, soil test evaluations, structural peer reviews, and constructability consultations for developers and municipal stakeholders.'
+  }
+];
