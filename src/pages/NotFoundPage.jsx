@@ -33,21 +33,29 @@ export default function NotFoundPage({ setCurrentPage }) {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <button
-            onClick={() => setCurrentPage('home')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-construction-500 hover:bg-construction-600 text-white font-heading font-bold text-xs uppercase tracking-wider shadow-sm transition-all"
+          <a
+            href="index.html"
+            onClick={(e) => {
+              if (e) e.preventDefault();
+              setCurrentPage('home');
+            }}
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-construction-500 hover:bg-construction-600 text-white font-heading font-bold text-xs uppercase tracking-wider shadow-sm transition-all cursor-pointer"
           >
             <Home className="w-4 h-4" />
             <span>Return to Home</span>
-          </button>
+          </a>
 
-          <button
-            onClick={() => setCurrentPage('services')}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-navy-900 hover:bg-navy-800 text-white font-heading font-bold text-xs uppercase tracking-wider transition-all"
+          <a
+            href="services.html"
+            onClick={(e) => {
+              if (e) e.preventDefault();
+              setCurrentPage('services');
+            }}
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-navy-900 hover:bg-navy-800 text-white font-heading font-bold text-xs uppercase tracking-wider transition-all cursor-pointer"
           >
             <Building className="w-4 h-4" />
             <span>View Services</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

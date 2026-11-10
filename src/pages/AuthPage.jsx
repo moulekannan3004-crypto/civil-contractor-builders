@@ -59,9 +59,15 @@ export default function AuthPage({ setCurrentPage }) {
         
         {/* Brand Header */}
         <div className="text-center mb-8">
-          <button 
-            onClick={() => setCurrentPage('home')}
-            className="inline-flex items-center gap-2.5 group focus:outline-none mb-3"
+          <a 
+            href="index.html"
+            onClick={(e) => {
+              if (e) e.preventDefault();
+              setCurrentPage('home');
+            }}
+            className="inline-flex items-center gap-2.5 group focus:outline-none mb-3 cursor-pointer"
+            title="ApexBuild Civil Contractors - Return to Home Page"
+            aria-label="ApexBuild Civil Contractors & Builders - Return to Home"
           >
             <div className="w-10 h-10 rounded-lg bg-construction-500 flex items-center justify-center text-navy-950 font-black shadow">
               <Building className="w-5 h-5 stroke-[2.5]" />
@@ -74,7 +80,7 @@ export default function AuthPage({ setCurrentPage }) {
                 Client & Trade Portal
               </p>
             </div>
-          </button>
+          </a>
           <h1 className="text-2xl font-black font-heading text-charcoal-900">
             {authMode === 'login' ? 'Project Portal Login' : 'Create Portal Account'}
           </h1>

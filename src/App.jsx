@@ -81,9 +81,21 @@ export default function App() {
   // Sync browser URL and popstate navigation
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
-    if (window.history && window.history.pushState) {
-      const pageFile = newPage === 'home' ? 'index.html' : `${newPage}.html`;
-      window.history.pushState({ page: newPage }, '', pageFile);
+    try {
+      if (window.history && window.history.pushState) {
+        const isFile = window.location.protocol === 'file:';
+        if (isFile) {
+          const target = newPage === 'home' ? 'index.html' : `${newPage}.html`;
+          if (!window.location.pathname.endsWith(target)) {
+            window.location.href = target;
+          }
+          return;
+        }
+        const target = newPage === 'home' ? '/' : `${newPage}.html`;
+        window.history.pushState({ page: newPage }, '', target);
+      }
+    } catch (err) {
+      console.warn('History pushState failed:', err);
     }
   };
 

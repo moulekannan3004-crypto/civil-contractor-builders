@@ -42,6 +42,30 @@ export default function Navbar({
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleLogoClick = (e) => {
+    setMobileMenuOpen(false);
+    setHomeDropdownOpen(false);
+
+    // If already on the home page:
+    if (currentPage === 'home') {
+      // If user has scrolled down, smooth scroll up to top
+      if (window.scrollY > 20) {
+        if (e) e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        // Already at the very top of home page, trigger a clean redirect / reload
+        const target = window.location.protocol === 'file:' ? 'index.html' : '/';
+        window.location.href = target;
+      }
+      return;
+    }
+
+    // If navigating to home from any other subpage (home-2, about, services, etc.):
+    if (e) e.preventDefault();
+    setCurrentPage('home');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const isHomeActive = currentPage === 'home' || currentPage === 'home-2';
   const isServicesActive = currentPage === 'services' || currentPage === 'service-details';
   const isBlogActive = currentPage === 'blog' || currentPage === 'blog-details';
@@ -64,9 +88,12 @@ export default function Navbar({
             
             {/* 1. Brand Logo (Left - Aligned & Flexible Sizing) */}
             <div className="flex items-center justify-start min-w-0 flex-1 sm:flex-initial">
-              <button 
-                onClick={() => handleNavClick('home')}
-                className="flex items-center gap-2 sm:gap-2.5 xl:gap-3 text-left group focus:outline-none min-w-0"
+              <a 
+                href="index.html"
+                onClick={handleLogoClick}
+                className="flex items-center gap-2 sm:gap-2.5 xl:gap-3 text-left group focus:outline-none min-w-0 cursor-pointer"
+                title="ApexBuild Civil Contractors - Return to Home Page"
+                aria-label="ApexBuild Civil Contractors & Builders - Return to Home"
               >
                 <div className="w-9 h-9 sm:w-10 sm:h-10 xl:w-11 xl:h-11 rounded-lg sm:rounded-xl bg-construction-500 flex items-center justify-center text-navy-950 font-black shadow-solid-orange group-hover:bg-construction-400 transition-all shrink-0">
                   <Building className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 stroke-[2.5]" />
@@ -81,7 +108,7 @@ export default function Navbar({
                     Civil Contractors & Builders
                   </p>
                 </div>
-              </button>
+              </a>
             </div>
 
             {/* 2. Desktop Navigation Links (Center - Equal Spacing & High-Contrast White Text) */}

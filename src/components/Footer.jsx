@@ -60,19 +60,41 @@ export default function Footer({ setCurrentPage, openQuoteModal }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 xl:gap-10 items-start">
           {/* Col 1: Brand Identity */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-construction-500 flex items-center justify-center text-navy-950 font-black shadow-solid-orange flex-shrink-0">
+            <a 
+              href="index.html"
+              onClick={(e) => {
+                if (e) e.preventDefault();
+                handleNav('home');
+                try {
+                  if (window.location.protocol === 'file:') {
+                    if (!window.location.pathname.endsWith('index.html')) {
+                      window.location.href = 'index.html';
+                    }
+                  } else {
+                    if (window.history && window.history.pushState) {
+                      window.history.pushState({ page: 'home' }, '', '/');
+                    }
+                  }
+                } catch (err) {
+                  window.location.href = 'index.html';
+                }
+              }}
+              className="inline-flex items-center gap-3 group focus:outline-none cursor-pointer"
+              title="ApexBuild Civil Contractors - Return to Home Page"
+              aria-label="ApexBuild Civil Contractors & Builders - Return to Home"
+            >
+              <div className="w-11 h-11 rounded-xl bg-construction-500 group-hover:bg-construction-400 flex items-center justify-center text-navy-950 font-black shadow-solid-orange flex-shrink-0 transition-colors">
                 <Building className="w-6 h-6 stroke-[2.5]" />
               </div>
               <div>
-                <span className="text-xl font-black font-heading text-white tracking-wider">
+                <span className="text-xl font-black font-heading text-white tracking-wider group-hover:text-construction-400 transition-colors">
                   APEX<span className="text-construction-500">BUILD</span>
                 </span>
-                <p className="text-[10px] uppercase tracking-widest font-bold text-slate-400">
+                <p className="text-[10px] uppercase tracking-widest font-bold text-slate-400 group-hover:text-slate-300 transition-colors">
                   Civil Contractors & Builders
                 </p>
               </div>
-            </div>
+            </a>
 
             <p className="text-xs text-slate-400 leading-relaxed">
               Established in 1998, ApexBuild is a premier licensed Class-A civil contracting firm delivering heavy commercial, industrial, and infrastructure assets engineered with strength, precision, and trust.
