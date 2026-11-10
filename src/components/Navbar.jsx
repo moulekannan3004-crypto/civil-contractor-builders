@@ -9,7 +9,9 @@ import {
   Moon, 
   Phone, 
   Clock,
-  Sparkles
+  Sparkles,
+  AlignLeft,
+  AlignRight
 } from 'lucide-react';
 import { companyInfo } from '../data/companyData';
 
@@ -267,32 +269,41 @@ export default function Navbar({
             {/* 3. Right Action Controls (Uniform Height h-9/h-10, Perfect Aspect Ratio & High-Contrast Styling) */}
             <div className="hidden lg:flex items-center justify-end gap-1.5 xl:gap-2.5 flex-shrink-0">
               
-              {/* LTR / RTL Unique Segmented Switch */}
-              <button
-                type="button"
-                onClick={toggleRtl}
-                title={`Layout: ${isRtl ? 'Right-to-Left (RTL)' : 'Left-to-Right (LTR)'} - Click to switch`}
+              {/* LTR / RTL Standard Symbol & Icon Segmented Switch */}
+              <div 
                 className="h-9 xl:h-10 p-0.5 xl:p-1 rounded-full bg-navy-950 border border-slate-700/80 hover:border-slate-500 inline-flex items-center gap-0.5 xl:gap-1 transition-all shadow-inner flex-shrink-0"
+                role="group"
+                aria-label="Layout Direction: Left-to-Right (LTR) or Right-to-Left (RTL)"
               >
-                <span 
-                  className={`h-6 xl:h-7 px-2 xl:px-2.5 rounded-full text-[10px] xl:text-[11px] font-black tracking-wider inline-flex items-center justify-center transition-all duration-300 ${
+                <button
+                  type="button"
+                  onClick={() => isRtl && toggleRtl()}
+                  title="Layout: Left-to-Right (LTR)"
+                  aria-pressed={!isRtl}
+                  className={`h-6 xl:h-7 px-2 xl:px-2.5 rounded-full text-[10px] xl:text-[11px] font-black tracking-wider inline-flex items-center justify-center gap-1.5 transition-all duration-300 focus:outline-none ${
                     !isRtl 
                       ? 'bg-construction-500 text-white shadow-md' 
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  LTR
-                </span>
-                <span 
-                  className={`h-6 xl:h-7 px-2 xl:px-2.5 rounded-full text-[10px] xl:text-[11px] font-black tracking-wider inline-flex items-center justify-center transition-all duration-300 ${
+                  <AlignLeft className="w-3.5 h-3.5 stroke-[2.5]" />
+                  <span>LTR</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => !isRtl && toggleRtl()}
+                  title="Layout: Right-to-Left (RTL)"
+                  aria-pressed={isRtl}
+                  className={`h-6 xl:h-7 px-2 xl:px-2.5 rounded-full text-[10px] xl:text-[11px] font-black tracking-wider inline-flex items-center justify-center gap-1.5 transition-all duration-300 focus:outline-none ${
                     isRtl 
                       ? 'bg-construction-500 text-white shadow-md' 
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  RTL
-                </span>
-              </button>
+                  <AlignRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                  <span>RTL</span>
+                </button>
+              </div>
 
               {/* Dark / Light Mode Toggle (Guaranteed 1:1 Circular Button) */}
               <button
@@ -318,8 +329,23 @@ export default function Navbar({
               </button>
             </div>
 
-            {/* Mobile Controls (Menu Toggle) */}
-            <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Mobile Controls (Menu Toggle & Standard Direction/Theme Toggles) */}
+            <div className="flex lg:hidden items-center gap-1 sm:gap-1.5 shrink-0">
+              {/* Standard LTR / RTL Direction Symbol Icon Button */}
+              <button
+                type="button"
+                onClick={toggleRtl}
+                title={isRtl ? 'Layout: RTL (Click to switch to LTR)' : 'Layout: LTR (Click to switch to RTL)'}
+                aria-label={isRtl ? 'Switch layout to LTR' : 'Switch layout to RTL'}
+                className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-navy-900 text-white border border-slate-700 flex items-center justify-center shrink-0 hover:bg-navy-800 transition-colors"
+              >
+                {isRtl ? (
+                  <AlignRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-construction-400 stroke-[2.5]" />
+                ) : (
+                  <AlignLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-200 stroke-[2.5]" />
+                )}
+              </button>
+
               <button
                 type="button"
                 onClick={toggleTheme}
@@ -431,13 +457,37 @@ export default function Navbar({
 
             {/* Mobile Actions */}
             <div className="pt-4 border-t border-navy-800 space-y-3">
-              <div className="flex items-center gap-2">
+              {/* Standard LTR / RTL Direction Control */}
+              <div 
+                className="p-1 rounded-xl bg-navy-950 border border-slate-700 flex items-center gap-1"
+                role="group"
+                aria-label="Layout Direction: Left-to-Right (LTR) or Right-to-Left (RTL)"
+              >
                 <button
                   type="button"
-                  onClick={toggleRtl}
-                  className="flex-1 py-2 rounded bg-navy-900 border border-slate-700 text-xs font-bold text-white"
+                  onClick={() => isRtl && toggleRtl()}
+                  aria-pressed={!isRtl}
+                  className={`flex-1 py-2 px-3 rounded-lg text-xs font-black tracking-wider flex items-center justify-center gap-2 transition-all ${
+                    !isRtl 
+                      ? 'bg-construction-500 text-white shadow-md' 
+                      : 'text-slate-400 hover:text-white'
+                  }`}
                 >
-                  Layout: {isRtl ? 'RTL (Right to Left)' : 'LTR (Left to Right)'}
+                  <AlignLeft className="w-4 h-4 stroke-[2.5]" />
+                  <span>LTR</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => !isRtl && toggleRtl()}
+                  aria-pressed={isRtl}
+                  className={`flex-1 py-2 px-3 rounded-lg text-xs font-black tracking-wider flex items-center justify-center gap-2 transition-all ${
+                    isRtl 
+                      ? 'bg-construction-500 text-white shadow-md' 
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  <AlignRight className="w-4 h-4 stroke-[2.5]" />
+                  <span>RTL</span>
                 </button>
               </div>
 
