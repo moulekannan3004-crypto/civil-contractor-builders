@@ -4,14 +4,13 @@ import {
   Menu, 
   X, 
   ArrowRight, 
+  ArrowLeft,
   ChevronDown,
   Sun, 
   Moon, 
   Phone, 
   Clock,
-  Sparkles,
-  AlignLeft,
-  AlignRight
+  Sparkles
 } from 'lucide-react';
 import { companyInfo } from '../data/companyData';
 
@@ -269,7 +268,7 @@ export default function Navbar({
             {/* 3. Right Action Controls (Uniform Height h-9/h-10, Perfect Aspect Ratio & High-Contrast Styling) */}
             <div className="hidden lg:flex items-center justify-end gap-1.5 xl:gap-2.5 flex-shrink-0">
               
-              {/* LTR / RTL Standard Symbol & Icon Segmented Switch */}
+              {/* LTR / RTL Standard Arrow Direction Segmented Switch */}
               <div 
                 className="h-9 xl:h-10 p-0.5 xl:p-1 rounded-full bg-navy-950 border border-slate-700/80 hover:border-slate-500 inline-flex items-center gap-0.5 xl:gap-1 transition-all shadow-inner flex-shrink-0"
                 role="group"
@@ -286,8 +285,8 @@ export default function Navbar({
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <AlignLeft className="w-3.5 h-3.5 stroke-[2.5]" />
                   <span>LTR</span>
+                  <ArrowRight className="w-3 h-3 xl:w-3.5 xl:h-3.5 stroke-[2.5]" />
                 </button>
                 <button
                   type="button"
@@ -300,7 +299,7 @@ export default function Navbar({
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <AlignRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                  <ArrowLeft className="w-3 h-3 xl:w-3.5 xl:h-3.5 stroke-[2.5]" />
                   <span>RTL</span>
                 </button>
               </div>
@@ -340,9 +339,9 @@ export default function Navbar({
                 className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-navy-900 text-white border border-slate-700 flex items-center justify-center shrink-0 hover:bg-navy-800 transition-colors"
               >
                 {isRtl ? (
-                  <AlignRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-construction-400 stroke-[2.5]" />
+                  <ArrowLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-construction-400 stroke-[2.5]" />
                 ) : (
-                  <AlignLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-200 stroke-[2.5]" />
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-slate-200 stroke-[2.5]" />
                 )}
               </button>
 
@@ -473,8 +472,8 @@ export default function Navbar({
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <AlignLeft className="w-4 h-4 stroke-[2.5]" />
                   <span>LTR</span>
+                  <ArrowRight className="w-4 h-4 stroke-[2.5]" />
                 </button>
                 <button
                   type="button"
@@ -486,7 +485,7 @@ export default function Navbar({
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <AlignRight className="w-4 h-4 stroke-[2.5]" />
+                  <ArrowLeft className="w-4 h-4 stroke-[2.5]" />
                   <span>RTL</span>
                 </button>
               </div>
