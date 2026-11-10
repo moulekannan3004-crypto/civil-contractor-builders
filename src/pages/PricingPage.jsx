@@ -244,7 +244,7 @@ export default function PricingPage({ setCurrentPage, openQuoteModal }) {
                 }`}
               >
                 {pkg.popular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-construction-500 text-white text-[11px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-construction-500 text-white text-[11px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow-md whitespace-nowrap">
                     {pkg.badge}
                   </span>
                 )}
@@ -330,25 +330,25 @@ export default function PricingPage({ setCurrentPage, openQuoteModal }) {
               <table className="w-full text-left text-xs border-collapse">
                 <thead>
                   <tr className="bg-navy-950 text-white divide-x divide-navy-800">
-                    <th className="py-5 px-6 w-5/12 font-heading font-black text-xs uppercase tracking-wider">
+                    <th className="pt-7 pb-4 px-6 w-5/12 font-heading font-black text-xs uppercase tracking-wider align-middle">
                       Technical Feature &amp; Inspection
                     </th>
-                    <th className="py-5 px-4 text-center font-heading font-bold text-xs uppercase tracking-wider w-7/36">
+                    <th className="pt-7 pb-4 px-4 text-center font-heading font-bold text-xs uppercase tracking-wider w-7/36 align-middle">
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-slate-300">Residential</span>
                         <span className="text-[10px] font-normal text-slate-400 normal-case">Custom &amp; Multi-Family</span>
                       </div>
                     </th>
-                    <th className="py-5 px-4 text-center font-heading font-black text-xs uppercase tracking-wider w-8/36 bg-navy-900 border-x-2 border-construction-500 relative">
-                      <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 bg-construction-500 text-navy-950 text-[9px] font-black uppercase tracking-widest px-2.5 py-0.5 rounded-b shadow">
+                    <th className="pt-7 pb-4 px-4 text-center font-heading font-black text-xs uppercase tracking-wider w-8/36 bg-navy-900 border-x-2 border-construction-500 relative align-middle">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-construction-500 text-navy-950 text-[8px] sm:text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-b shadow-sm whitespace-nowrap">
                         Most Requested
                       </div>
-                      <div className="flex flex-col items-center gap-1 pt-1">
+                      <div className="flex flex-col items-center gap-1">
                         <span className="text-construction-400">Commercial</span>
                         <span className="text-[10px] font-normal text-slate-300 normal-case">Towers &amp; Corporate</span>
                       </div>
                     </th>
-                    <th className="py-5 px-4 text-center font-heading font-bold text-xs uppercase tracking-wider w-7/36">
+                    <th className="pt-7 pb-4 px-4 text-center font-heading font-bold text-xs uppercase tracking-wider w-7/36 align-middle">
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-slate-300">Industrial</span>
                         <span className="text-[10px] font-normal text-slate-400 normal-case">PEB &amp; Logistics Hubs</span>
